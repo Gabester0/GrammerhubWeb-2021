@@ -3,7 +3,7 @@ import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
 
 const ShowLink = ({ show }) => (
-  <li key={show.id}>
+  <li key={show.id}> 
     <Link as={`/p/${show.id}`} href={`/post?id=${show.id}`}>
       <a>{show.name}</a>
     </Link>

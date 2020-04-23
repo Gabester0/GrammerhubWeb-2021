@@ -16,7 +16,7 @@ You can deploy this app either to [Zeit](https://zeit.co/) via the `now` command
 *Dev Server*
 ```sh
 npm i
-npm run dev
+npm run dev 
 ```
 
 *Production Server*

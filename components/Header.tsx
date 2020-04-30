@@ -15,7 +15,7 @@ const Header = () => {
       </Link>
       <Link className="nav-item" href="/about">
         <a className="nav-link" style={linkStyle}>
-          Meetups
+          About Us
         </a>
       </Link>
       <Link className="nav-item" href="/contact">

@@ -1,16 +1,16 @@
-import Header from './Header'
- 
+import HeaderNavbar from "./HeaderNavbar";
+
 const layoutStyle = {
   margin: 20,
   padding: 20,
-  border: '1px solid #DDD'
-}
+  border: "1px solid #DDD"
+};
 
-const Layout = (props) => (
+const Layout = props => (
   <div style={layoutStyle}>
-    <Header />
+    <HeaderNavbar />
     {props.children}
   </div>
-)
+);
 
-export default Layout
+export default Layout;

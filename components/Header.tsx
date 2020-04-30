@@ -7,19 +7,38 @@ const linkStyle = {
 
 const Header = () => {
   return (
-    <div>
-      <Link href="/">
-        <a style={linkStyle}>Home Page</a>
-      </Link>
-      <Link href="/about">
-        <a className="test" style={linkStyle}>
-          About
+    <ul className="navbar-nav ml-auto">
+      <Link className="nav-item" href="/">
+        <a className="nav-link" style={linkStyle}>
+          Home
         </a>
       </Link>
-      <Link href="/navbar">
-        <a style={linkStyle}>Navbar</a>
+      <Link className="nav-item" href="/about">
+        <a className="nav-link" style={linkStyle}>
+          Meetups
+        </a>
       </Link>
-    </div>
+      <Link className="nav-item" href="/contact">
+        <a className="nav-link" style={linkStyle}>
+          Showcase
+        </a>
+      </Link>
+      <Link className="nav-item" href="/contact">
+        <a className="nav-link" style={linkStyle}>
+          Blog
+        </a>
+      </Link>
+      <Link className="nav-item" href="/contact">
+        <a className="nav-link" style={linkStyle}>
+          Media
+        </a>
+      </Link>
+      <Link className="nav-item" href="/contact">
+        <a className="nav-link" style={linkStyle}>
+          Contact
+        </a>
+      </Link>
+    </ul>
   );
 };
 

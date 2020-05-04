@@ -1,0 +1,69 @@
+.header-navbar {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   width: 100%;
+   z-index: 9;
+}
+
+.navbar {
+   background: #311569;
+   padding: 15px 0;
+   position: relative;
+   z-index: 9;
+
+   .navbar-expand-lg {
+      .nav-item {
+         margin-right: 46px;
+      }
+
+      li a {
+         color: #f0f0f0;
+         font-size: 18px;
+         font-weight: 400;
+         text-transform: 400;
+         text-transform: capitalize;
+         padding: 30px 0 !important;
+         display: inline-block;
+
+         transition: all linear 0.3s;
+         -webkit-transition: all linear 0.3s;
+         -moz-transition: all linear 0.3s;
+         -ms-transition: all linear 0.3s;
+         -o-transition: all linear 0.3s;
+      }
+
+      li:hover>a {
+         color: #ffe169;
+      }
+
+      .navbar-nav {
+         .dropdown-menu {
+            a {
+               display: block;
+               padding: 10px 20px !important;
+
+               transition: all linear 0.3s;
+               -webkit-transition: all linear 0.3s;
+               -moz-transition: all linear 0.3s;
+               -ms-transition: all linear 0.3s;
+               -o-transition: all linear 0.3s;
+            }
+
+            a:hover {
+               color: #ffe169;
+            }
+         }
+      }
+   }
+}
+
+.navbar:before {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 1px;
+   background: #171c62;
+}

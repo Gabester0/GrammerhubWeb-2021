@@ -1,4 +1,6 @@
 // next.config.js
+const withCss = require("@zeit/next-css")
+// const withSass = require("@zeit/next-sass")
 const withTypescript = require('@zeit/next-typescript')
 const withCSS = require('@zeit/next-css')
 const withSass = require('@zeit/next-sass')

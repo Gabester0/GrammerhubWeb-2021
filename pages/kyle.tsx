@@ -6,6 +6,7 @@ export default () => (
     <Header />
     <Header />
     <Header />
+    <p>no way</p>
     <p>This is the kyle page</p>
   </Layout>
 );

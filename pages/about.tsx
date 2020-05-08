@@ -3,8 +3,6 @@ import Layout from '../components/MyLayout'
 import { Row, Container, Col } from 'react-bootstrap'
 import { Jumbotron} from 'react-bootstrap'
 
-
-
 export default () => (
   <Layout>
 

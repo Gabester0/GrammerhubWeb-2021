@@ -1,21 +1,22 @@
 import Link from "next/link";
-import Router from 'next/router'
+import Router from "next/router";
 // import css from "./Header.scss";
+import css from "../pages/assets/css/navbar/navbar.scss";
 
 const linkStyle = {
   marginRight: 15
 };
 
 const Header = () => {
-  Router.events.on('routeChangeStart', () => {
-    console.log('CHANGE STARTING')
-  })
-  Router.events.on('routeChangeComplete', () => {
-    console.log('CHANGE COMPLETED')
-  })
+  Router.events.on("routeChangeStart", () => {
+    console.log("CHANGE STARTING");
+  });
+  Router.events.on("routeChangeComplete", () => {
+    console.log("CHANGE COMPLETED");
+  });
   return (
     <ul className="navbar-nav ml-auto">
-      <li>
+      <li className={css.navItem}>
         <Link href="/">
           <a className="nav-link" style={linkStyle}>
             Home
@@ -27,35 +28,35 @@ const Header = () => {
           Calendar
         </a>
       </Link> */}
-      <li>
+      <li className={css.navItem}>
         <Link href="/about">
           <a className="nav-link" style={linkStyle}>
             About Us
           </a>
         </Link>
       </li>
-      <li>
+      <li className={css.navItem}>
         <Link href="/showcase">
           <a className="nav-link" style={linkStyle}>
             Showcase
           </a>
         </Link>
       </li>
-      <li>
+      <li className={css.navItem}>
         <Link href="/blog">
           <a className="nav-link" style={linkStyle}>
             Blog
           </a>
         </Link>
       </li>
-      <li>
+      <li className={css.navItem}>
         <Link href="/calendar">
-          <a href="/calendar" className="nav-link" style={linkStyle}>
-            Media
+          <a className="nav-link" style={linkStyle}>
+            Calendar
           </a>
         </Link>
       </li>
-      <li>
+      <li className={css.navItem}>
         <Link href="/contact">
           <a className="nav-link" style={linkStyle}>
             Contact

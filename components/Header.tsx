@@ -13,6 +13,11 @@ const Header = () => {
           Home
         </a>
       </Link>
+      {/* <Link className="nav-item" href="/calendar">
+        <a className="nav-link" style={linkStyle}>
+          Calendar
+        </a>
+      </Link> */}
       <Link className="nav-item" href="/about">
         <a className="nav-link" style={linkStyle}>
           About Us

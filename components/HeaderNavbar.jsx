@@ -8,8 +8,8 @@ const HeaderNavbar = () => (
   <header className="header-navbar sticky">
     <nav className="navbar navbar-expand-lg">
       <div className="container">
-        <LogoNavbar />
-        <ToggleButton />
+        {/* <LogoNavbar />
+        <ToggleButton /> */}
         <CollapseNavbar />
       </div>
     </nav>

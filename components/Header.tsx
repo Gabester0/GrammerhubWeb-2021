@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Router from 'next/router'
 // import css from "./Header.scss";
 
 const linkStyle = {
@@ -6,43 +7,61 @@ const linkStyle = {
 };
 
 const Header = () => {
+  Router.events.on('routeChangeStart', () => {
+    console.log('CHANGE STARTING')
+  })
+  Router.events.on('routeChangeComplete', () => {
+    console.log('CHANGE COMPLETED')
+  })
   return (
     <ul className="navbar-nav ml-auto">
-      <Link className="nav-item" href="/">
-        <a className="nav-link" style={linkStyle}>
-          Home
-        </a>
-      </Link>
-      {/* <Link className="nav-item" href="/calendar">
+      <li>
+        <Link href="/">
+          <a className="nav-link" style={linkStyle}>
+            Home
+          </a>
+        </Link>
+      </li>
+      {/* <Link  href="/calendar">
         <a className="nav-link" style={linkStyle}>
           Calendar
         </a>
       </Link> */}
-      <Link className="nav-item" href="/about">
-        <a className="nav-link" style={linkStyle}>
-          About Us
-        </a>
-      </Link>
-      <Link className="nav-item" href="/contact">
-        <a className="nav-link" style={linkStyle}>
-          Showcase
-        </a>
-      </Link>
-      <Link className="nav-item" href="/contact">
-        <a className="nav-link" style={linkStyle}>
-          Blog
-        </a>
-      </Link>
-      <Link className="nav-item" href="/calendar" passHref>
-        <a className="nav-link" style={linkStyle}>
-          Media
-        </a>
-      </Link>
-      <Link className="nav-item" href="/contact">
-        <a className="nav-link" style={linkStyle}>
-          Contact
-        </a>
-      </Link>
+      <li>
+        <Link href="/about">
+          <a className="nav-link" style={linkStyle}>
+            About Us
+          </a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/showcase">
+          <a className="nav-link" style={linkStyle}>
+            Showcase
+          </a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/blog">
+          <a className="nav-link" style={linkStyle}>
+            Blog
+          </a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/calendar">
+          <a href="/calendar" className="nav-link" style={linkStyle}>
+            Media
+          </a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/contact">
+          <a className="nav-link" style={linkStyle}>
+            Contact
+          </a>
+        </Link>
+      </li>
     </ul>
   );
 };

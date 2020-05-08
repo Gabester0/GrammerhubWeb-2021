@@ -31,8 +31,8 @@ export default () => {
     async function fetchData() {
         axios.get(url, {headers: {"Access-Control-Allow-Origin": "*"}})
         .then(res => {
-          const events = res.data;
-          setEvents(events);
+          const eventos = res.data;
+          setEvents(eventos);
         })
     }
 

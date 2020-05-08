@@ -30,7 +30,7 @@ const Header = () => {
       </Link>
       <Link className="nav-item" href="/calendar" passHref>
         <a className="nav-link" style={linkStyle}>
-          Media
+          Calendar
         </a>
       </Link>
       <Link className="nav-item" href="/contact">

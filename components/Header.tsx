@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <ul className="navbar-nav ml-auto">
       <li className={css.navItem}>
-        <Link href="/">
+        <Link href="/hero">
           <a className="nav-link" style={linkStyle}>
             Home
           </a>

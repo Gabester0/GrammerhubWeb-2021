@@ -1,5 +1,6 @@
 const express = require('express')
 const next = require('next')
+import axios from 'axios'
 import api from './api'
 
 const dev = process.env.NODE_ENV !== 'production'
@@ -16,6 +17,15 @@ app.prepare()
     const actualPage = '/post'
     const queryParams = { id: req.params.id }
     app.render(req, res, actualPage, queryParams)
+  })
+
+  server.get('/grammerhub', async (req, res) => {
+    try {
+      const resp = await axios.get("https://api.meetup.com/grammerhub/events")
+      res.send(resp.data)
+    } catch (err) {
+      console.log(err)
+    }
   })
 
   server.get('*', (req, res) => {

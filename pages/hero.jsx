@@ -1,40 +1,37 @@
 import React from "react";
 import Link from "next/link";
 
-import { Container } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import css from "./assets/css/hero/home-hero.scss";
 
 class Hero extends React.Component {
   render() {
     return (
-      <div className={css.heroWrapper}>
-        {/* These are bootstrap classes that works
-            like utilities. See breakpoints in docs */}
-        <div className="d-table">
-          <div className="d-table-cell">
-            <Container>
-              <div className={css.heading}>
-                <p>
-                  Do you want to <span> learn </span> to code?
-                </p>
-                <h1>
-                  Level Up Your <span>Grammerhub</span> <br /> Skills &nbsp;
-                  <strong>2</strong>
-                  <strong>0</strong>
-                  <strong>2</strong>
-                  <strong>0</strong>
+      <section className={css.alignHero}>
+        <Container>
+          <Row className="justify-content-center align-items-center">
+            <Col md={10} sm={12}>
+              <div className="text-center">
+                <h4 className={`${css.marginBottom} text-white text-uppercase`}>
+                  Welcome to Grammerhub
+                </h4>
+                <h1 className="text-uppercase text-white">
+                  virtual live coding sessions
                 </h1>
-                <ul>
-                  <li>
-                    <i className="icofont-calendar"></i>Virtual Group Coding
-                    Nights
-                  </li>
-                </ul>
+                <p className="text-white">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod temp <br />
+                  or incididunt ut labore et dolore magna aliqua. Ut enim ad
+                  minim
+                </p>
+                <Button bsPrefix={css.heroBtn} className="text-uppercase">
+                  {"Learn More"}
+                </Button>
               </div>
-            </Container>
-          </div>
-        </div>
-      </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
     );
   }
 }

@@ -9,11 +9,13 @@
 }
 
 
+
 .title {
     color:#311569 !important;
     text-align: center;
     font-weight: bold;
     font-size: 34px;
+    
 }
 
 .story{
@@ -56,10 +58,21 @@ color: #311569;
 
 }
 
-.jumbo{
-    background-color:#311569 !important;
+.ginny{
+    padding-left: 10px;
+    padding-right: 10px;
     
 }
+
+.jumbo{
+    
+    background: -webkit-linear-gradient(#311569,#452c78); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#311569,#452c78); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#311569,#452c78); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#311569,#452c78); /* Standard syntax */
+}
+    
+
 
 .subhead{
  color: white;

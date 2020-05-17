@@ -8,7 +8,7 @@
 main {
     width: 100%;
     height: 100%;
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
     overflow-x: hidden;
 }
 
@@ -33,8 +33,13 @@ a:focus {
 **********************************/
 
 .gradient-bg {
+    position: relative;
     background: -webkit-linear-gradient(left, #4311a1 50%, #18379e 100%);
     background: linear-gradient(to left, #4311a1 50%, #18379e 100%);
+}
+
+.wrapper {
+    height: 100%;
 }
 
 /*********************************
@@ -65,12 +70,12 @@ a:focus {
     vertical-align: middle;
 
     text-align: center;
-    padding: 100px 0 0 0;
+    /* padding: 100px 0 0 0; */
     z-index: 1;
 }
 
 .welcome-msg.jumbo-box {
-    padding: 190px 0 0 80px;
+    /* padding: 190px 0 0 80px; */
 }
 
 .welcome-msg.jumbo-box header > h1 {
@@ -126,16 +131,22 @@ a:focus {
 }
 
 #coming-soon {
+    min-height: 100vh;
     animation: fadeIn 3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .welcome-msg header {
+    font-size: 2.5rem !important;
     position: relative;
     animation: fromLeft 2s ease-out;
     animation-fill-mode: both;
 }
 
 .slogan {
+    font-size: 1.5rem !important;
     position: relative;
     animation: fromRight 2s ease-out;
     animation-fill-mode: both;

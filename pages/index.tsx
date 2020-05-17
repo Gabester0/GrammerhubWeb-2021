@@ -37,7 +37,7 @@ const Index = (props) => (
                 <div className="container">
                     <div className="row">
                       <div className="col-md-6 col-md-push-3">
-                          <p className="slogan">Our site is coming soon. Gather with a team of developers to practice in demand skills</p>
+                          <p className="slogan">Our site is coming soon. Gather with a team of developers to practice in demand skills!</p>
                       </div>
                     </div>
                 </div>

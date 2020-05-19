@@ -4,7 +4,7 @@ import HeaderCTA from "./HeaderCTA";
 const CollapseNavbar = () => (
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <Header />
-    <HeaderCTA />
+    {/* <HeaderCTA /> */}
   </div>
 );
 

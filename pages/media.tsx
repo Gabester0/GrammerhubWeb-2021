@@ -4,7 +4,7 @@ import { Container, Jumbotron, Row, Col, Card } from 'react-bootstrap'
 // pull data from db
 // conditionally render loading images
 // how to view? clickable card, button, view in a player component
-// Lose Jumbotron?
+// Lose Jumbotron? <-- depends on site style
 // adjust vertical spacing of cards
 // add media query to navbar bumper div: 24px small, 52px large
 

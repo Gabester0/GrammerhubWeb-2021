@@ -27,7 +27,7 @@ export default () => (
           </div>
         </Col>
         <Col sm={12} lg={6}>
-        <div className={`${css.ginny}`}>
+          <div className={`${css.ginny}`}>
             <img
               className={`${css.photo}`}
               src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80"
@@ -40,7 +40,7 @@ export default () => (
     <Container fluid className={`${css.padding}`}>
       <Row className={`${css.styling}`}>
         <Col sm={12} lg={6}>
-        <div className={`${css.ginny}`}>
+          <div className={`${css.ginny}`}>
             <img
               className={`${css.photo}`}
               src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
@@ -48,7 +48,7 @@ export default () => (
           </div>
         </Col>
         <Col sm={12} lg={6}>
-        <div className={`${css.ginny}`}>
+          <div className={`${css.ginny}`}>
             <h5 className={`${css.title}`}>News</h5>
             <p>
               We are a young club based in Boca Raton, FL. We welcome coders and

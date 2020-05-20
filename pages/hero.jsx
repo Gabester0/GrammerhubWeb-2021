@@ -2,35 +2,35 @@ import React from "react";
 import Link from "next/link";
 
 import { Container, Row, Col, Button } from "react-bootstrap";
-import css from "./assets/css/hero/home-hero.scss";
+import css from "./assets/css/hero/hero-banner.scss";
 
 class Hero extends React.Component {
   render() {
     return (
-      <section className={css.alignHero}>
-        <Container>
-          <Row className="justify-content-center align-items-center">
-            <Col md={10} sm={12}>
-              <div className="text-center">
-                <h4 className={`${css.marginBottom} text-white text-uppercase`}>
-                  Welcome to Grammerhub
-                </h4>
-                <h1 className="text-uppercase text-white">
-                  virtual live coding sessions
-                </h1>
-                <p className="text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod temp <br />
-                  or incididunt ut labore et dolore magna aliqua. Ut enim ad
-                  minim
-                </p>
-                <Button bsPrefix={css.heroBtn} className="text-uppercase">
-                  {"Learn More"}
-                </Button>
-              </div>
-            </Col>
-          </Row>
-        </Container>
+      <section className={`${css.section} ${css.h100}`}>
+        <div className={css.bgOverlay}></div>
+        <div className={css.displayTable}>
+          <div className={css.displayTableCell}>
+            <Container>
+              <Row>
+                <Col className="text-white text-center" lg={{ size: 8 }}>
+                  <h4 className={css.clubTitle}>Grammerhub</h4>
+                  <h1 classname={css.clubSlogan}>
+                    Virtual Live Coding Sessions
+                  </h1>
+                  <p className={`${css.ptb30} ${css.clubDesc} mx-auto`}>
+                    Come and join us to learn the skills that would make you a
+                    better developer. We offer hands on peer review while we
+                    code games and sites.
+                  </p>
+                  <Button bsPrefix={css.heroBtn} className="text-uppercase">
+                    {"Join Our Slack"}
+                  </Button>
+                </Col>
+              </Row>
+            </Container>
+          </div>
+        </div>
       </section>
     );
   }

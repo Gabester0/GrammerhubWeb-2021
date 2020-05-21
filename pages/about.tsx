@@ -5,6 +5,8 @@ import css from "./about.scss";
 import { Jumbotron } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Hero from "./hero";
+import Footer from "./footer";
+import SocialFooter from "./socialFooter";
 
 export default () => (
   <React.Fragment>
@@ -13,7 +15,7 @@ export default () => (
       <section className={`${css.paddingtop}`}></section>
       <Container fluid className={`${css.padding}`}>
         <Row>
-          <Col lg={{ size: 8 }}>
+        <Col sm={12} lg={6}>
             <div className={`${css.wrapper}mx-auto text-center`}>
               <h3 className={`${css.title}`}>About Us</h3>
               <p className={`${css.aboutsection}`}>
@@ -130,6 +132,7 @@ export default () => (
           </Col>
         </Row>
       </Container>
+      <Footer />
     </Layout>
   </React.Fragment>
 );

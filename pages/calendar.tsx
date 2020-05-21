@@ -4,18 +4,8 @@ import axios from 'axios'
 import MyCalendar from '../components/MyCalendar'
 import '../node_modules/react-big-calendar/lib/css/react-big-calendar.css'
 import { MeetupEvent } from '../service/eventModel'
-
-const layoutStyle = {
-    display: 'grid',
-    gridGap: '10px',
-    marginTop: '50px',
-    leftSide: {
-        gridColumn: '1 / span 1'
-    },
-    rightSide: {
-        gridColumn: '2 / span 1'
-    }
-}
+import css from "./assets/css/calendar/calendar.scss";
+import CustomScroll from 'react-custom-scroll';
 
 export default () => {
 
@@ -37,18 +27,22 @@ export default () => {
 
     return (
         <Layout> 
-            <div style={layoutStyle}>
-                <div style={layoutStyle.leftSide}>
-                    this is the left side
-                    {events.map( event => {
-                        return (
-                        <div className="">
-                            <span>{event.local_date} || {event.name}</span>
-                        </div>
-                        )
-                    })}
+            <div className={css.layoutStyle}>
+                <div className={css.leftSide}>
+                    <div className={css.eventHeader}>Events List</div>
+                    <div style={{height: '500px', overflow:'scroll'}}>
+                        <CustomScroll allowOuterScroll={true}>
+                            {events.map( (event, index) => {
+                                return (
+                                <div className={css.listItem}>
+                                    <span>{index + 1} - {event.local_date} || {event.name}</span>
+                                </div>
+                                )
+                            })}
+                        </CustomScroll>
+                    </div>
                 </div>
-                <div style={layoutStyle.rightSide}>
+                <div className={css.rightSide}>
                     <MyCalendar events={events}/>
                 </div>
             </div>

@@ -9,7 +9,7 @@ const allViews = Object.keys(Views).map(k => Views[k])
 const ColoredDateCellWrapper = ({ children }) =>
   React.cloneElement(React.Children.only(children), {
     style: {
-      backgroundColor: 'lightblue',
+      backgroundColor: 'rgb(169, 106, 241)'
     },
   })
 

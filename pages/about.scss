@@ -3,6 +3,27 @@
     padding-bottom: .5rem;
 }
 
+.paddingall{
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.aboutsection {
+font-size: 18px;
+line-height: 30px;
+font-weight: 300px;
+max-width: 900px;
+
+
+
+}
+
+.wrapper{
+    max-width: 800px;
+}
+
 .display3 {
     color: #311569 !important;
     text-align: center;
@@ -12,7 +33,9 @@
     color: #311569 !important;
     text-align: center;
     font-weight: bold;
-    font-size: 34px;
+    font-size: 41px;
+    line-height: 20px;
+    padding-bottom: 8px;
 
 }
 

@@ -1,40 +1,39 @@
 import React from "react";
 import Link from "next/link";
 
-import { Container } from "react-bootstrap";
-import css from "./assets/css/hero/home-hero.scss";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import css from "./assets/css/hero/hero-banner.scss";
 
 class Hero extends React.Component {
   render() {
     return (
-      <div className={css.heroWrapper}>
-        {/* These are bootstrap classes that works
-            like utilities. See breakpoints in docs */}
-        <div className="d-table">
-          <div className="d-table-cell">
-            <Container>
-              <div className={css.heading}>
-                <p>
-                  Do you want to <span> learn </span> to code?
-                </p>
-                <h1>
-                  Level Up Your <span>Grammerhub</span> <br /> Skills &nbsp;
-                  <strong>2</strong>
-                  <strong>0</strong>
-                  <strong>2</strong>
-                  <strong>0</strong>
-                </h1>
-                <ul>
-                  <li>
-                    <i className="icofont-calendar"></i>Virtual Group Coding
-                    Nights
-                  </li>
-                </ul>
-              </div>
-            </Container>
+      <React.Fragment>
+        <section className={`${css.section} ${css.h100}`}>
+          <div className={css.bgOverlay}></div>
+          <div className={css.displayTable}>
+            <div className={css.displayTableCell}>
+              <Container>
+                <Row>
+                  <Col className="text-white text-center" lg={{ size: 8 }}>
+                    <h4 className={css.clubTitle}>Grammerhub</h4>
+                    <h1 classname={css.clubSlogan}>
+                      Virtual Live Coding Sessions
+                    </h1>
+                    <p className={`${css.ptb30} ${css.clubDesc} mx-auto`}>
+                      Come and join us to learn the skills that would make you a
+                      better developer. We offer hands on peer review while we
+                      code games and sites.
+                    </p>
+                    <Button bsPrefix={css.heroBtn} className="text-uppercase">
+                      {"Join Our Slack"}
+                    </Button>
+                  </Col>
+                </Row>
+              </Container>
+            </div>
           </div>
-        </div>
-      </div>
+        </section>
+      </React.Fragment>
     );
   }
 }

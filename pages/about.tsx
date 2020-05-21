@@ -1,15 +1,12 @@
 import Layout from "../components/MyLayout";
 
-import { Row, Container, Col } from "react-bootstrap";
+import { Row, Container, Col, Jumbotron, Button } from "react-bootstrap";
 import css from "./about.scss";
-import { Jumbotron } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
+
 import Hero from "./hero";
 import Footer from "./footer";
-import SocialFooter from "./socialFooter";
 
 // get our fontawesome imports
-
 // The first import bellow bring the react component,
 // the second one, bring just the icon that we want
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -23,21 +20,22 @@ export default () => (
       <section className={`${css.paddingtop}`}></section>
       <Container fluid className={`${css.padding}`}>
         <Row>
-        <Col lg={4}>
+          <Col lg={4}>
             <div className={`${css.wrapper}mx-auto text-center`}>
               <h3 className={`${css.title}`}>We are Grammers</h3>
               <p className={`${css.aboutsection}`}>
-              <FontAwesomeIcon icon={faCodeBranch} /> Learn to code</p>
+                <FontAwesomeIcon icon={faCodeBranch} /> Learn to code
+              </p>
               <p className={`${css.aboutsection}`}>
-              <FontAwesomeIcon icon={faCode} /> Have fun! </p>
+                <FontAwesomeIcon icon={faCode} /> Have fun!{" "}
+              </p>
               <p className={`${css.aboutsection}`}>
-              <FontAwesomeIcon icon={faCodeBranch} /> Build cool projects! </p>
-              
-           
+                <FontAwesomeIcon icon={faCodeBranch} /> Build cool projects!{" "}
+              </p>
             </div>
           </Col>
 
-        <Col lg={4}>
+          <Col lg={4}>
             <div className={`${css.wrapper}mx-auto text-center`}>
               <h3 className={`${css.title}`}>About Us</h3>
               <p className={`${css.aboutsection}`}>

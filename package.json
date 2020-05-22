@@ -36,6 +36,7 @@
     "react": "^16.4.2",
     "react-big-calendar": "^0.24.6",
     "react-bootstrap": "^1.0.1",
+    "react-custom-scroll": "^4.2.0",
     "react-dom": "^16.4.2",
     "react-markdown": "^4.0.3",
     "react-router-dom": "^5.1.2",

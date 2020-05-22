@@ -20,7 +20,7 @@ export default () => (
       <section className={`${css.paddingtop}`}></section>
       <Container fluid className={`${css.padding}`}>
         <Row>
-          <Col lg={4}>
+      <Col lg={4} col sm={12}>
             <div className={`${css.wrapper}mx-auto text-center`}>
               <h3 className={`${css.title}`}>We are Grammers</h3>
               <p className={`${css.aboutsection}`}>
@@ -35,7 +35,7 @@ export default () => (
             </div>
           </Col>
 
-          <Col lg={4}>
+         <Col lg={4} col sm={12}>
             <div className={`${css.wrapper}mx-auto text-center`}>
               <h3 className={`${css.title}`}>About Us</h3>
               <p className={`${css.aboutsection}`}>
@@ -52,7 +52,7 @@ export default () => (
               </Button>
             </div>
           </Col>
-          <Col lg={4}>
+          <Col lg={4} col sm={12}>
             <div className={`${css.ginny}`}>
               <img
                 className={`${css.photo}`}

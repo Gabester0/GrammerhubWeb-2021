@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Container, Row, Col, Form, Input } from "react-bootstrap";
 import SocialFooter from "./socialFooter";
 
-import utils from "./helpers.scss";
+import utils from "../../../pages/helpers.scss";
 import css from "./footer.scss";
 
 class Footer extends React.Component {

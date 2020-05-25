@@ -2,13 +2,15 @@ import React from "react";
 import Link from "next/link";
 
 import { Container, Row, Col, Button } from "react-bootstrap";
+
+import utils from "../../../pages/helpers.scss";
 import css from "./hero.scss";
 
 class Hero extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <section className={`${css.section} ${css.h100}`}>
+        <section className={`${utils.section} ${css.h100}`}>
           <div className={css.bgOverlay}></div>
           <div className={css.displayTable}>
             <div className={css.displayTableCell}>

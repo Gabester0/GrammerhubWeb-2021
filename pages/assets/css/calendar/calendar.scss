@@ -1,20 +1,21 @@
 
 .layoutStyle {
-    display: grid;
-    grid-gap: 10px;
     margin-top: 50px;
-    grid-row: auto;
+
 
     .leftSide {
-        grid-column: 1 / span 1;
-
+        
         .eventHeader {
             font-size: large;
             color: red;
             text-align: center;
             margin-bottom: 10px;
         }
-
+        .eventList {
+            max-height: 500px;
+            overflow: scroll;
+        }
+        
         .listItem {
             background-color: rgb(218, 201, 238);
             border: 1px solid;
@@ -28,6 +29,6 @@
     }
 
     .rightSide {
-        grid-column: 2 / span 1
+
     }
 }

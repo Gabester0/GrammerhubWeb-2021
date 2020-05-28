@@ -15,11 +15,12 @@ import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 import LastMeetups from "../components/Meetups/lastMeetups";
 import LeftContent from "../components/Common/Sections/leftContent";
+import Services from "../components/Services/services";
 
 export default () => (
   <React.Fragment>
     <Hero />
-    <LastMeetups />
+    <Services />
     <LeftContent />
     <section className={`${css.paddingtop}`}>
       <Container fluid className={`${css.padding}`}>

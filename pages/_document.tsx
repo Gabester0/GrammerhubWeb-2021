@@ -1,7 +1,5 @@
 import Document, { Head, Main, NextScript } from "next/document";
-
-import "../static/css/normalize.css";
-import "../static/css/style.css";
+import "./assets/css/global/styles.scss";
 
 class MyDocument extends Document {
   /* Modify the initial Docment for Customization

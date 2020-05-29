@@ -3,23 +3,26 @@ import Layout from '../components/MyLayout'
 import axios from 'axios'
 import MyCalendar from '../components/MyCalendar'
 import '../node_modules/react-big-calendar/lib/css/react-big-calendar.css'
-import { MeetupEvent } from '../service/eventModel'
+// import { MeetupEvent } from '../service/EventModel'
 import css from "./assets/css/calendar/calendar.scss";
 import EventListItem from '../components/EventListItem'
 import { Col, Row } from 'react-bootstrap'
 
 export default () => {
+    // const [events, setEvents] = useState();
 
-    const [events, setEvents] = React.useState<MeetupEvent[]>([]);
+    const [events, setEvents] = React.useState</*MeetupEvent*/any[]>([]);
     const [selected, setSelected] = React.useState<number>();
 
     async function fetchData() {
+        // axios.get(url, {headers: {"Access-Control-Allow-Origin": "*"}})
+        // .then(res => {
+        //   const eventos = res.data;
+        //   setEvents(eventos);
+        // })
         axios.get('/grammerhub').then(res => {
-            setEvents(res.data.map(d => {
-                let event = new MeetupEvent(d);
-                return event;
-                })
-            );
+            console.log(res.data)
+            setEvents(res.data)
         })
     }
     
@@ -50,3 +53,22 @@ export default () => {
         </Layout>   
     )
 }
+
+
+// const Calendar = () => {
+
+//     return (
+//         <Layout> 
+//             <div style={layoutStyle}>
+//                 <div style={layoutStyle.leftSide}>
+//                     this is the left side
+//                 </div>
+//                 <div style={layoutStyle.rightSide}>
+//                     <MyCalendar/>
+//                 </div>
+//             </div>
+//         </Layout>
+//     )
+// }
+
+// export default Calendar

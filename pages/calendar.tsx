@@ -3,7 +3,7 @@ import Layout from '../components/MyLayout'
 import axios from 'axios'
 import MyCalendar from '../components/MyCalendar'
 import '../node_modules/react-big-calendar/lib/css/react-big-calendar.css'
-// import { MeetupEvent } from '../service/EventModel'
+import { MeetupEvent } from '../service/EventModel'
 import css from "./assets/css/calendar/calendar.scss";
 import EventListItem from '../components/EventListItem'
 import { Col, Row } from 'react-bootstrap'
@@ -11,7 +11,7 @@ import { Col, Row } from 'react-bootstrap'
 export default () => {
     // const [events, setEvents] = useState();
 
-    const [events, setEvents] = React.useState</*MeetupEvent*/any[]>([]);
+    const [events, setEvents] = React.useState<MeetupEvent[]>([]);
     const [selected, setSelected] = React.useState<number>();
 
     async function fetchData() {

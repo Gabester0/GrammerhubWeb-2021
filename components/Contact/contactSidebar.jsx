@@ -1,68 +1,27 @@
 import React from "react";
-import { Col, Row, Form, Button } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
+import css from "./assets/css/contact/social-sidebar.scss";
+// import ContactSocial from "./contactSocial";
 
-class ContactForm extends React.Component {
+class ContactSidebar extends React.Component {
   render() {
     return (
-      <Col lg="8" md="12">
-        <Form id="contactForm">
-          <Row>
-            <Col lg="6" md="6">
-              <Form.Group>
-                <Form.Label htmlFor="name">Your Name*</Form.Label>
-                <Form.Control
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Please enter your full name"
-                />
-              </Form.Group>
-            </Col>
-            <Col lg="6" md="6">
-              <Form.Group>
-                <Form.Label htmlFor="email">Your Email*</Form.Label>
-                <Form.Control
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Please enter your email"
-                />
-              </Form.Group>
-            </Col>
-            <Col lg="12" md="12">
-              <Form.Group>
-                <Form.Label htmlFor="phone">Phone Number*</Form.Label>
-                <Form.Control
-                  type="text"
-                  name="number"
-                  id="number"
-                  placeholder="Please enter your Number"
-                />
-              </Form.Group>
-            </Col>
-            <Col lg="12" md="12">
-              <Form.Group>
-                <Form.Label htmlFor="message">Your Message*</Form.Label>
-                <Form.Control
-                  as="textarea"
-                  cols="30"
-                  rows="4"
-                  id="message"
-                  placeholder="Please enter your message"
-                />
-              </Form.Group>
-            </Col>
-
-            <Col lg="12" md="12">
-              <Button type="submit" variant="primary">
-                {"Send Now"}
-              </Button>
-            </Col>
-          </Row>
-        </Form>
+      <Col lg="4" md="12">
+        <div className={css.leaveMessage}>
+          <h3>Have any Suggestion on improving coding lessons? </h3>
+          <p>
+            If you have any questions about the services we provide simply use
+            the form below. We try and respond to all queries and comments
+            within 24 hours.
+          </p>
+          <div className={css.keepContact}>
+            <h3>Reach Us Out in Social</h3>
+            {/* <ContactSocial /> */}
+          </div>
+        </div>
       </Col>
     );
   }
 }
 
-export default ContactForm;
+export default ContactSidebar;

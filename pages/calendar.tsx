@@ -3,74 +3,50 @@ import Layout from '../components/MyLayout'
 import axios from 'axios'
 import MyCalendar from '../components/MyCalendar'
 import '../node_modules/react-big-calendar/lib/css/react-big-calendar.css'
-
-const layoutStyle = {
-    display: 'grid',
-    gridGap: '10px',
-    leftSide: {
-        gridColumn: '1 / span 1'
-    },
-    rightSide: {
-        gridColumn: '2 / span 1'
-    }
-}
-
-const url: string = "https://api.meetup.com/grammerhub/events";
-
+import { MeetupEvent } from '../service/eventModel'
+import css from "./assets/css/calendar/calendar.scss";
+import EventListItem from '../components/EventListItem'
+import { Col, Row } from 'react-bootstrap'
 
 export default () => {
-    // const [events, setEvents] = useState();
 
-    // const getEvents = () => axios.get(url);
-
-    // const [hasError, setErrors] = useState(false);
-    const [events, setEvents] = React.useState([]);
+    const [events, setEvents] = React.useState<MeetupEvent[]>([]);
+    const [selected, setSelected] = React.useState<number>();
 
     async function fetchData() {
-        // axios.get(url, {headers: {"Access-Control-Allow-Origin": "*"}})
-        // .then(res => {
-        //   const eventos = res.data;
-        //   setEvents(eventos);
-        // })
         axios.get('/grammerhub').then(res => {
-            console.log(res.data)
-            setEvents(res.data)
+            setEvents(res.data.map(d => {
+                let event = new MeetupEvent(d);
+                return event;
+                })
+            );
         })
     }
-
+    
     React.useEffect(() => {
         fetchData();
     }, [])
 
+
     return (
         <Layout> 
-            <div style={layoutStyle}>
-                <div style={layoutStyle.leftSide}>
-                    this is the left side {JSON.stringify(events)}
-                </div>
-                <div style={layoutStyle.rightSide}>
-                    <MyCalendar/>
-                </div>
-            </div>
+            <Row className={css.layoutStyle}>
+                <Col className={css.leftSide}>
+                    <div className={css.eventHeader}>Events List</div>
+                    <div className={css.eventList}>
+                        {/* <CustomScroll allowOuterScroll={true}> */}
+                            {events.map( (event, index) => {
+                                return (
+                                    <EventListItem event={event} index={index}></EventListItem>
+                                )
+                            })}
+                        {/* </CustomScroll> */}
+                    </div>
+                </Col>
+                <Col className={css.rightSide}>
+                    <MyCalendar events={events}/>
+                </Col>
+            </Row>
         </Layout>   
     )
 }
-
-
-// const Calendar = () => {
-
-//     return (
-//         <Layout> 
-//             <div style={layoutStyle}>
-//                 <div style={layoutStyle.leftSide}>
-//                     this is the left side
-//                 </div>
-//                 <div style={layoutStyle.rightSide}>
-//                     <MyCalendar/>
-//                 </div>
-//             </div>
-//         </Layout>
-//     )
-// }
-
-// export default Calendar

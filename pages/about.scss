@@ -1,3 +1,84 @@
-.icon{
-    font-size: 70px;
+.padding {
+    padding-top: 5rem;
+    padding-bottom: .5rem;
+}
+
+.paddingall{
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.aboutsection {
+font-size: 18px;
+line-height: 30px;
+font-weight: 300px;
+max-width: 900px;
+
+
+
+}
+
+.wrapper{
+    max-width: 800px;
+}
+
+.display3 {
+    color: #311569 !important;
+    text-align: center;
+}
+
+.title {
+    color: #311569 !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 41px;
+    line-height: 20px;
+    padding-bottom: 8px;
+
+}
+
+.story {
+    align-items: center;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    color: #311569;
+
+}
+
+.photo {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15%;
+}
+
+.icon {
+    background-color: #311569;
+}
+
+.body {
+    color: #311569 !important;
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    left: 150px;
+    top: 150px;
+}
+
+.jumbo {
+    background: linear-gradient(to right, #363795, #665391);
+
+
+}
+
+
+
+.subhead {
+    color: white;
+    font-size: 6rem;
+    text-align: center;
 }

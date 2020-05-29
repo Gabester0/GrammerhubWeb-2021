@@ -1,5 +1,6 @@
 // import Header from "../components/Header";
 import HeaderNavbar from "../pages/headerNavbar";
+import Footer from "./Shared/Footer/footer";
 
 const layoutStyle = {
   margin: 20,
@@ -12,6 +13,7 @@ const Layout = props => (
     <HeaderNavbar />
     {/* <Header /> */}
     {props.children}
+    <Footer />
   </div>
 );
 

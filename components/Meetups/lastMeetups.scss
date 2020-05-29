@@ -1,0 +1,28 @@
+.date {
+   font-weight: 900;
+   font-size: 24px;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+
+   span {
+      color: #ac94dd;
+   }
+}
+
+.time {
+   font-weight: 900;
+   font-size: 18px;
+   text-transform: uppercase;
+
+   .fa {
+      color: #ac94dd;
+      margin-right: 10px;
+      vertical-align: middle;
+      font-size: 24px;
+   }
+}
+
+p {
+   width: 70%;
+   margin: 16px auto 0;
+}

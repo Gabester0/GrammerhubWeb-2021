@@ -1,11 +1,11 @@
 import React from 'react'
-import Layout from '../components/MyLayout'
+import Layout from '../components/MyLayoutK'
 import axios from 'axios'
-import MyCalendar from '../components/MyCalendar'
+import MyCalendar from '../components/MyCalendarK'
 import '../node_modules/react-big-calendar/lib/css/react-big-calendar.css'
 import { MeetupEvent } from '../service/EventModel'
 import css from "./assets/css/calendar/calendar.scss";
-import EventListItem from '../components/EventListItem'
+import EventListItem from '../components/EventListItemK'
 import { Col, Row } from 'react-bootstrap'
 
 export default () => {

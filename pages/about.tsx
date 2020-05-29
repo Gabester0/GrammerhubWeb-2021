@@ -2,8 +2,8 @@ import React from 'react'
 import { Row, Container, Col, Jumbotron, Button } from "react-bootstrap";
 import css from "./about.scss";
 
-import Hero from "../components/Home/Hero/hero";
-import Footer from "../components/Shared/footer";
+import Hero from "../components/Home/Hero/HeroK";
+import Footer from "../components/Shared/FooterK";
 
 // get our fontawesome imports
 // The first import bellow bring the react component,
@@ -12,9 +12,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCodeBranch } from "@fortawesome/free-solid-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 
-import LastMeetups from "../components/Meetups/lastMeetups";
-import LeftContent from "../components/Common/Sections/leftContent";
-import Services from "../components/Services/services";
+import LastMeetups from "../components/Meetups/LastMeetupsK";
+import LeftContent from "../components/Common/Sections/LeftContentK";
+import Services from "../components/Services/ServicesK";
 
 export default () => (
   <React.Fragment>

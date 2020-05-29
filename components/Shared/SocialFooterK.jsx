@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { Container, Row, Col } from "react-bootstrap";
-import css from "./socialFooter.scss";
+import css from "./SocialFooterK.scss";
 
 class SocialFooter extends React.Component {
   state = {

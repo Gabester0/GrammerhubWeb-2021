@@ -2,7 +2,7 @@ import React from 'react'
 import { Row, Container, Col, Jumbotron, Button } from "react-bootstrap";
 import css from "./about.scss";
 
-import Hero from "../components/Home/Hero/Hero";
+import Hero from "../components/Home/Hero/HeroK";
 import Footer from "../components/Shared/Footer";
 
 // get our fontawesome imports

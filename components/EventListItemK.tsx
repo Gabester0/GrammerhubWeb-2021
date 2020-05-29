@@ -9,7 +9,7 @@ export default (props) => {
 
     const handleClickOutside = e => {
       console.log("clicking anywhere");
-      if (myRef.current.contains(e.target)) {
+      if (myRef.current?.contains(e.target)) {
         // inside click
         setIsSelected(true);
         return;

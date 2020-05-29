@@ -1,3 +1,4 @@
+import React from 'react'
 import { Row, Container, Col, Jumbotron, Button } from "react-bootstrap";
 import css from "./about.scss";
 
@@ -14,6 +15,7 @@ import { faCode } from "@fortawesome/free-solid-svg-icons";
 export default () => (
   <React.Fragment>
     <Hero />
+    <img src='../static/computer.svg' />
     <section className={`${css.paddingtop}`}></section>
     <Container fluid className={`${css.padding}`}>
       <Row>

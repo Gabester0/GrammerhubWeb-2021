@@ -18,7 +18,7 @@ export default () => (
       <Container>
         <Row>
           <Col>
-            <Card style={{ width: '20rem' }}>
+            <Card style={{ width: '20rem', marginBottom: "10px" }}>
               <Card.Img 
                 src="http://placekitten.com/1800/1800"
               />
@@ -29,18 +29,17 @@ export default () => (
             </Card>
           </Col>
           <Col>
-            <Card style={{ width: '20rem' }}>
-              <Card.Img 
-                src="http://placekitten.com/1500/1500"
-              />
+            <Card style={{ width: '20rem', marginBottom: "10px" }}>
+              <iframe width="100%" height="318" src="https://www.youtube.com/embed/OqDANG7tCFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe>
               <Card.Body>
-                <Card.Title>Bacon ipsum dolor amet</Card.Title>
-                <Card.Text>esse alcatra leberkas, elit hamburger qui drumstick et pastrami.</Card.Text>
+                <Card.Title>Grammerhub 002: React Part II</Card.Title>
+                <Card.Text>Our March 16th 2020 meetup</Card.Text>
               </Card.Body>
             </Card>
           </Col>
           <Col>
-            <Card style={{ width: '20rem' }}>
+            <Card style={{ width: '20rem', marginBottom: "10px" }}>
               <Card.Img 
                 src="http://placekitten.com/1900/1900"
               />
@@ -51,7 +50,7 @@ export default () => (
             </Card>
           </Col>
           <Col>
-            <Card style={{ width: '20rem' }}>
+            <Card style={{ width: '20rem', marginBottom: "10px" }}>
               <Card.Img 
                 src="http://placekitten.com/1200/1200"
               />

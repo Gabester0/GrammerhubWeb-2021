@@ -9,6 +9,7 @@ class Hero extends React.Component {
     return (
       <React.Fragment>
         <section className={`${css.section} ${css.h100}`}>
+          <div className={css.bgHero} />
           <div className={css.bgOverlay}></div>
           <div className={css.displayTable}>
             <div className={css.displayTableCell}>

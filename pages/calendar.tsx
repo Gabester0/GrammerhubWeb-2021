@@ -1,7 +1,7 @@
 import React from 'react'
-import Layout from '../components/MyLayoutK'
+import Layout from '../components/MyLayout'
 import axios from 'axios'
-import MyCalendar from '../components/MyCalendarK'
+import MyCalendar from '../components/MyCalendar'
 import '../node_modules/react-big-calendar/lib/css/react-big-calendar.css'
 import { MeetupEvent } from '../service/EventModel'
 import css from "./assets/css/calendar/calendar.scss";

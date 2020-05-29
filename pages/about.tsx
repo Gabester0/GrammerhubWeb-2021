@@ -11,8 +11,7 @@ import Footer from "../components/Shared/FooterK";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCodeBranch } from "@fortawesome/free-solid-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
-
-import LastMeetups from "../components/Meetups/LastMeetupsK";
+// import LastMeetups from "../components/Meetups/LastMeetupsK";
 import LeftContent from "../components/Common/Sections/LeftContentK";
 import Services from "../components/Services/ServicesK";
 

@@ -5,7 +5,7 @@ import MyCalendar from '../components/MyCalendar'
 import '../node_modules/react-big-calendar/lib/css/react-big-calendar.css'
 import { MeetupEvent } from '../service/EventModel'
 import css from "./assets/css/calendar/calendar.scss";
-import EventListItem from '../components/EventListItemK'
+import EventListItem from '../components/EventListItem'
 import { Col, Row } from 'react-bootstrap'
 
 export default () => {

@@ -1,5 +1,5 @@
-import Layout from "../components/MyLayoutK";
-import Header from "../components/HeaderK";
+import Layout from "../components/MyLayout";
+import Header from "../components/Header";
 
 export default () => (
   <Layout>

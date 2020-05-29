@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 import { Container, Row, Col, Form, Input } from "react-bootstrap";
-import SocialFooter from "./SocialFooterK";
+import SocialFooter from "./SocialFooter";
 
 import utils from "../../pages/helpers.scss";
-import css from "./FooterK.scss";
+import css from "./Footer.scss";
 
 class Footer extends React.Component {
   constructor(props) {

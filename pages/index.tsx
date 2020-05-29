@@ -1,4 +1,4 @@
-import Layout from '../components/MyLayoutK'
+import Layout from '../components/MyLayout'
 import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
 

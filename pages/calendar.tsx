@@ -5,11 +5,13 @@ import MyCalendar from '../components/MyCalendar'
 import '../node_modules/react-big-calendar/lib/css/react-big-calendar.css'
 import { MeetupEvent } from '../service/eventModel'
 import css from "./assets/css/calendar/calendar.scss";
-import CustomScroll from 'react-custom-scroll';
+import EventListItem from '../components/EventListItem'
+import { Col, Row } from 'react-bootstrap'
 
 export default () => {
 
     const [events, setEvents] = React.useState<MeetupEvent[]>([]);
+    const [selected, setSelected] = React.useState<number>();
 
     async function fetchData() {
         axios.get('/grammerhub').then(res => {
@@ -20,32 +22,31 @@ export default () => {
             );
         })
     }
-
+    
     React.useEffect(() => {
         fetchData();
     }, [])
 
+
     return (
         <Layout> 
-            <div className={css.layoutStyle}>
-                <div className={css.leftSide}>
+            <Row className={css.layoutStyle}>
+                <Col className={css.leftSide}>
                     <div className={css.eventHeader}>Events List</div>
-                    <div style={{height: '500px', overflow:'scroll'}}>
-                        <CustomScroll allowOuterScroll={true}>
+                    <div className={css.eventList}>
+                        {/* <CustomScroll allowOuterScroll={true}> */}
                             {events.map( (event, index) => {
                                 return (
-                                <div className={css.listItem}>
-                                    <span>{index + 1} - {event.local_date} || {event.name}</span>
-                                </div>
+                                    <EventListItem event={event} index={index}></EventListItem>
                                 )
                             })}
-                        </CustomScroll>
+                        {/* </CustomScroll> */}
                     </div>
-                </div>
-                <div className={css.rightSide}>
+                </Col>
+                <Col className={css.rightSide}>
                     <MyCalendar events={events}/>
-                </div>
-            </div>
+                </Col>
+            </Row>
         </Layout>   
     )
 }

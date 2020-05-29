@@ -37,13 +37,11 @@ export default () => {
                 <Col className={css.leftSide}>
                     <div className={css.eventHeader}>Events List</div>
                     <div className={css.eventList}>
-                        {/* <CustomScroll allowOuterScroll={true}> */}
                             {events.map( (event, index) => {
                                 return (
                                     <EventListItem event={event} index={index}></EventListItem>
                                 )
                             })}
-                        {/* </CustomScroll> */}
                     </div>
                 </Col>
                 <Col className={css.rightSide}>

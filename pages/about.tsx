@@ -2,8 +2,6 @@
 
 import { Row, Container, Col, Jumbotron, Button } from "react-bootstrap";
 import css from "./about.scss";
-
-import Hero from "../components/Home/Hero/hero";
 import Footer from "../components/Shared/footer";
 
 // get our fontawesome imports
@@ -13,14 +11,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCodeBranch } from "@fortawesome/free-solid-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 
-import LastMeetups from "../components/Meetups/lastMeetups";
 import LeftContent from "../components/Common/Sections/leftContent";
-import Services from "../components/Services/services";
 
 export default () => (
   <React.Fragment>
-    <Hero />
-    <Services />
     <LeftContent />
     <section className={`${css.paddingtop}`}>
       <Container fluid className={`${css.padding}`}>

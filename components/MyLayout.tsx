@@ -2,14 +2,19 @@
 import HeaderNavbar from "../pages/headerNavbar";
 import Footer from "../components/Shared/footer";
 
-const layoutStyle = {
-  margin: 20,
-  padding: 20,
-  border: "1px solid #DDD"
-};
+// Teporarily disable layoutStyle
+// for rendering
 
-const Layout = props => (
-  <div style={layoutStyle}>
+// const layoutStyle = {
+//   margin: 20,
+//   padding: 20,
+//   border: "1px solid #DDD"
+// };
+//
+// style={layoutStyle}
+
+const Layout = (props) => (
+  <div>
     <HeaderNavbar />
     {/* <Header /> */}
     {props.children}

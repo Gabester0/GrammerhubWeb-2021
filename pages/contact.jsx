@@ -1,71 +1,96 @@
-import React from "react";
-
+import React, { Component } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import css from "./assets/css/contact/contact-page.scss";
-// import ContactSidebar from "./contactSidebar";
-// import ContactForm from "./contactForm";
 
-class Contact extends React.Component {
+import Layout from "../components/MyLayout";
+import SectionTitle from "../components/Common/Sections/SectionTitle";
+
+import utils from "../pages/helpers.scss";
+import css from "./contact.scss";
+
+class Contact extends Component {
   render() {
     return (
-      <React.Fragment>
-        <div className={css.contactWrapper}>
-          <Container>
-            <Form className={css.contactForm}>
-              <div className={`${css.contactTitle} text-center mb-5`}>
-                <span class="sub-title mb-2 d-block">Get In Touch</span>
-                <h2 class={`${css.subtitle} text-primary`}>Contact Us</h2>
-              </div>
-              <Row className="mb-4">
-                <Col md={6} className="mb-4 mb-md-0">
-                  <Form.Control
-                    type="text"
-                    name="firstname"
-                    id="firstname"
-                    placeholder="Your First Name"
-                  />
-                </Col>
-                <Col md={6}>
-                  <Form.Control
-                    type="text"
-                    name="lastname"
-                    id="lastname"
-                    placeholder="Your Last Name"
-                  />
-                </Col>
-              </Row>
-              <Row className="mb-4">
-                <Col md={12}>
-                  <Form.Control
-                    type="text"
-                    name="email"
-                    id="email"
-                    placeholder="Your Email Address"
-                  />
-                </Col>
-              </Row>
-              <Row className="mb-4">
-                <Col md={12}>
-                  <Form.Control
-                    as="textarea"
-                    cols="30"
-                    rows="10"
-                    id="message"
-                    placeholder="Write your Message here"
-                  />
-                </Col>
-              </Row>
-              <Row>
-                <Col md={12}>
-                  <Button type="submit" variant="primary" size="md">
-                    {"Send Now"}
-                  </Button>
-                </Col>
-              </Row>
-            </Form>
-          </Container>
-        </div>
-      </React.Fragment>
+      <Layout>
+        <React.Fragment>
+          <section className={utils.section} id="contact">
+            <Container>
+              <SectionTitle
+                title="Leave Us a Message"
+                description="Tell us how was your experience with Grammerhub meetups."
+              />
+              <Form>
+                <Row>
+                  <Col lg={{ span: 8, offset: 2 }}>
+                    <div className="mt-4 pt-4">
+                      <Row>
+                        <Col lg={6}>
+                          <Form.Group>
+                            <Form.Control
+                              className={utils.formControl}
+                              type="text"
+                              name="name"
+                              id="name"
+                              placeholder="Your Name..."
+                            />
+                          </Form.Group>
+                        </Col>
+                        <Col lg={6}>
+                          <Form.Group>
+                            <Form.Control
+                              className={utils.formControl}
+                              type="email"
+                              name="email"
+                              id="email"
+                              placeholder="Your Email..."
+                            />
+                          </Form.Group>
+                        </Col>
+                      </Row>
+                      <Row>
+                        <Col lg={12} className="mt-2">
+                          <Form.Group>
+                            <Form.Control
+                              className={utils.formControl}
+                              type="text"
+                              name="subject"
+                              id="subject"
+                              placeholder="Your Subject..."
+                            />
+                          </Form.Group>
+                        </Col>
+                      </Row>
+                      <Row>
+                        <Col lg={12} className="mt-2">
+                          <Form.Group>
+                            <Form.Control
+                              className={`${utils.formControl} ${utils.textarea}`}
+                              as="textarea"
+                              col="20"
+                              rows="4"
+                              id="message"
+                              placeholder="Your Message here..."
+                            />
+                          </Form.Group>
+                        </Col>
+                      </Row>
+                      <Row>
+                        <Col lg={12} className="text-right">
+                          <Button
+                            type="submit"
+                            bsPrefix={`${utils.btn} ${css.btnContact}`}
+                          >
+                            {"Send Now"}
+                          </Button>
+                        </Col>
+                      </Row>
+                    </div>
+                  </Col>
+                </Row>
+              </Form>
+            </Container>
+          </section>
+        </React.Fragment>
+      </Layout>
     );
   }
 }

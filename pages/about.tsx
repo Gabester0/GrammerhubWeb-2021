@@ -39,7 +39,8 @@ export default () => (
           </Col>
 
           <Col lg={6} sm={12}>
-            <div className={`${css.wrapper}mx-auto text-center`}>
+            <div className={`${css.item}`}>
+            <div className={`${css.wrapper}mx-auto px-auto text-center`}>
               <h3 className={`${css.title}`}>About Us</h3>
               <p className={`${css.aboutsection}`}>
                 We are Grammers. Founded in 2019 we are a club that welcomes
@@ -53,6 +54,7 @@ export default () => (
               <Button className={`${css.story}`} variant="outline-dark">
                 Our Story
               </Button>
+            </div>
             </div>
           </Col>
      
@@ -70,7 +72,9 @@ export default () => (
             </div>
           </Col>
           <Col sm={12} lg={6}>
-            <div className={`${css.ginny}`}>
+          <div className={`${css.item}`}>
+          <div className={`${css.wrapper}mx-auto text-center`}>
+
               <h5 className={`${css.title}`}>News</h5>
               <p className={`${css.aboutsection}`}>
                 We are a young club based in Boca Raton, FL. We welcome coders
@@ -82,6 +86,7 @@ export default () => (
               <Button className={`${css.story}`} variant="outline-dark">
                 Our Work
               </Button>
+            </div>
             </div>
           </Col>
         </Row>
@@ -105,6 +110,7 @@ export default () => (
           </div>
         </Col>
         <Col sm={12} lg={6}>
+        <div className={`${css.item}`}>
           <div className={`${css.wrapper}mx-auto text-center`}>
             <h5 className={`${css.title}`}>Recent Projects</h5>
             <p className={`${css.aboutsection}`}>
@@ -118,6 +124,7 @@ export default () => (
               See More
             </Button>
           </div>
+          </div>
         </Col>
       </Row>
     </Container>
@@ -125,6 +132,7 @@ export default () => (
     <Container fluid className={`${css.padding}`}>
       <Row className={`${css.styling}`}>
         <Col sm={12} lg={6}>
+        <div className={`${css.item}`}>
           <div className={`${css.wrapper}mx-auto text-center`}>
             <h5 className={`${css.title}`}>Last Class </h5>
             <p className={`${css.aboutsection}`}>
@@ -137,6 +145,7 @@ export default () => (
             <Button className={`${css.story}`} variant="outline-dark">
               Learn More
             </Button>
+          </div>
           </div>
         </Col>
 

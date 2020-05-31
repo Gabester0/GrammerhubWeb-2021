@@ -21,52 +21,54 @@ module.exports = withTypescript(withCSS(withSass({
         config.module.rules.forEach(rule => {
             // was rule.test.toString()
             // console.log(rule)
-        if (rule.test && rule.test.toString().includes('.scss')) {
-            rule.rules = rule.use.map(useRule => {
-            if (typeof useRule === 'string') {
-                return { loader: useRule };
+            if (rule.test && rule.test.toString().includes('.scss')) {
+                rule.rules = rule.use.map(useRule => {
+                    if (typeof useRule === 'string') {
+                        return {
+                            loader: useRule
+                        };
+                    }
+                    if (useRule.loader === 'css-loader') {
+                        return {
+                            oneOf: [{
+                                    test: new RegExp('.global.scss$'),
+                                    loader: useRule.loader,
+                                    options: {},
+                                },
+                                {
+                                    loader: useRule.loader,
+                                    options: {
+                                        modules: true
+                                    }
+                                },
+                            ],
+                        };
+                    }
+                    return useRule;
+                });
+                delete rule.use;
             }
-            if (useRule.loader === 'css-loader') {
-                return {
-                oneOf: [
-                    {
-                    test: new RegExp('.global.scss$'),
-                    loader: useRule.loader,
-                    options: {},
-                    },
-                    {
-                    loader: useRule.loader,
-                    options: { modules: true }
-                    },
-                ],
-                };
-            }
-            return useRule;
-            });
-            delete rule.use;
-        }
         });
         return config;
     },
     module: {
-        loaders: [
-          {
-            test: /\.css$/,
-            loaders: ['style-loader', 'css-loader?modules'],
-          },
-          {
-            test: /.tsx?$/,
-            loader: 'babel-loader',
-            exclude: /node_modules/,
-          },
-          {
-            test: /\.svg$/,
-            loader: 'react-svg-loader',
-          },
-          {
-            test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf)(\?[a-z0-9=.]+)?$/,
-            loader: 'url-loader?limit=100000',
-          },
+        loaders: [{
+                test: /\.css$/,
+                loaders: ['style-loader', 'css-loader?modules'],
+            },
+            {
+                test: /.tsx?$/,
+                loader: 'babel-loader',
+                exclude: /node_modules/,
+            },
+            {
+                test: /\.svg$/,
+                loader: 'react-svg-loader',
+            },
+            {
+                test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf)(\?[a-z0-9=.]+)?$/,
+                loader: 'url-loader?limit=100000',
+            },
         ],
     },
 })))

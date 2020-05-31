@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { Container, Row, Col, Form, Input } from "react-bootstrap";
-import SocialFooter from "./SocialFooter";
+import SocialFooter from "../Shared/SocialFooter";
 
 import utils from "../../pages/helpers.scss";
 import css from "./Footer.scss";
@@ -18,25 +18,25 @@ class Footer extends React.Component {
           lists: [
             {
               subHeading: "Home",
-              link: "#"
+              link: "#",
             },
             {
               subHeading: "About Us",
-              link: "#"
+              link: "#",
             },
             {
               subHeading: "Showcase",
-              link: "#"
+              link: "#",
             },
             {
               subHeading: "Calendar",
-              link: "#"
+              link: "#",
             },
             {
               subHeading: "Contact",
-              link: "#"
-            }
-          ]
+              link: "#",
+            },
+          ],
         },
         {
           heading: "Information",
@@ -44,40 +44,40 @@ class Footer extends React.Component {
           lists: [
             {
               subHeading: "Terms & Conditions",
-              link: "#"
+              link: "#",
             },
             {
               subHeading: "Privacy Policy",
-              link: "#"
+              link: "#",
             },
             {
               subHeading: "User Agreement",
-              link: "#"
+              link: "#",
             },
             {
               subHeading: "Bookmarks",
-              link: "#"
-            }
-          ]
+              link: "#",
+            },
+          ],
         },
         {
           heading: "Support",
           lists: [
             {
               subHeading: "FAQ",
-              link: "#"
+              link: "#",
             },
             {
               subHeading: "Slack",
-              link: "#"
+              link: "#",
             },
             {
               subHeading: "Forum",
-              link: "#"
-            }
-          ]
-        }
-      ]
+              link: "#",
+            },
+          ],
+        },
+      ],
     };
   }
 
@@ -88,14 +88,14 @@ class Footer extends React.Component {
           <Container>
             <Row>
               {/* Dynamic Footer Menus */}
-              {this.state.footerMenu.map(block => (
+              {this.state.footerMenu.map((block) => (
                 <Col lg={3}>
                   <h4>{block.heading}</h4>
 
                   <div className={`${utils.mt20} text-muted`}>
                     <ul className={`${css.subMenus} list-unstyled`}>
                       {/* Dynamic Footer Navigation */}
-                      {block.lists.map(url => (
+                      {block.lists.map((url) => (
                         <li>
                           <Link href={url.link} passHref>
                             {url.subHeading}

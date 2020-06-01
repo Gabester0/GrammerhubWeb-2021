@@ -12,9 +12,7 @@ class SectionTitle extends Component {
               {this.props.title}
             </h1>
             <div className={`${utils.sectionBorder}`}>
-              <p
-                className={`${utils.subTitle} ${utils.pt30} text-muted text-center`}
-              >
+              <p className={`${utils.subTitle} text-muted text-center`}>
                 {this.props.description}
               </p>
             </div>

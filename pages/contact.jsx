@@ -15,8 +15,8 @@ class Contact extends Component {
           <section className={utils.section} id="contact">
             <Container>
               <SectionTitle
-                title="Leave Us a Message"
-                description="Tell us how was your experience with Grammerhub meetups."
+                title="Contact Us"
+                description="Tell us how was your experience with Grammerhub Meetups."
               />
               <Form>
                 <Row>

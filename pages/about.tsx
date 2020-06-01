@@ -3,7 +3,12 @@ import React from "react";
 // import Layout from "../components/MyLayout";
 
 import { Row, Container, Col, Jumbotron, Button } from "react-bootstrap";
+<<<<<<< HEAD
 import css from "../pages/about.scss";
+=======
+import css from "./about.scss";
+import Footer from "../components/Shared/footer";
+>>>>>>> ced1a5f642313b55d91d6ab4eb4d898ad930e9e1
 
 // get our fontawesome imports
 // The first import bellow bring the react component,
@@ -12,6 +17,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCodeBranch } from "@fortawesome/free-solid-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 
+<<<<<<< HEAD
 import LeftContent from "../components/Common/Sections/LeftContent";
 import Layout from "../components/MyLayout";
 
@@ -101,6 +107,14 @@ export default () => (
         </Jumbotron>
       </Container>
 
+=======
+import LeftContent from "../components/Common/Sections/leftContent";
+
+export default () => (
+  <React.Fragment>
+    <LeftContent />
+    <section className={`${css.paddingtop}`}>
+>>>>>>> ced1a5f642313b55d91d6ab4eb4d898ad930e9e1
       <Container fluid className={`${css.padding}`}>
         <Row className={`${css.styling}`}>
           <Col sm={12} lg={6}>

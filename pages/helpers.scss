@@ -66,11 +66,33 @@
    padding: 10px 22px;
    transition: all 0.5s;
    box-shadow: none !important;
+   border-radius: 30px;
+
+   &:hover {
+      transform: translateY(-5px);
+   }
 }
 
-.btn:hover {
-   transform: translateY(-5px);
+/**** Forms   ****/
+
+.formControl {
+   margin-bottom: 20px;
+   box-shadow: none;
+   height: 50px;
+   padding-left: 20px;
+   border: 1px solid #e0e0e0;
+   font-size: 14px;
+
+   :focus {
+      border-color: #ccc;
+   }
+
+   .textarea {
+      height: auto;
+      padding-top: 13.5px;
+   }
 }
+
 
 /*** Background Colors ****/
 

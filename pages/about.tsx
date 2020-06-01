@@ -1,9 +1,10 @@
 import React from 'react'
 import { Row, Container, Col, Jumbotron, Button } from "react-bootstrap";
-import css from "./about.scss";
+import css from "../pages/about.scss";
 
 import Hero from "../components/Home/Hero/Hero";
 import Footer from "../components/Shared/Footer";
+import AboutUs from "../components/Home/AboutUs";
 
 // get our fontawesome imports
 // The first import bellow bring the react component,
@@ -20,6 +21,7 @@ export default () => (
     <Hero />
     <Services />
     <LeftContent />
+    <AboutUs />
     <section className={`${css.paddingtop}`}>
       <Container fluid className={`${css.padding}`}>
         <Row>
@@ -63,15 +65,7 @@ export default () => (
 
       <Container fluid className={`${css.padding}`}>
         <Row className={`${css.styling}`}>
-          <Col sm={12} lg={6}>
-            <div className={`${css.wrapper}mx-auto text-center`}>
-              <img
-                className={`${css.photo}`}
-                src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
-              ></img>
-            </div>
-          </Col>
-          <Col sm={12} lg={6}>
+        <Col sm={12} lg={6}>
           <div className={`${css.item}`}>
           <div className={`${css.wrapper}mx-auto text-center`}>
 
@@ -89,6 +83,15 @@ export default () => (
             </div>
             </div>
           </Col>
+          <Col sm={12} lg={6}>
+            <div className={`${css.wrapper}mx-auto text-center`}>
+              <img
+                className={`${css.photo}`}
+                src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+              ></img>
+            </div>
+          </Col>
+       
         </Row>
       </Container>
     </section>

@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import utils from "../../pages/helpers.scss";
-import css from "./LastMeetups.scss";
+import css from "./lastMeetups.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-solid-svg-icons";

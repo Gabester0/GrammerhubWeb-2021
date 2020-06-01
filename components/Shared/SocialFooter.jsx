@@ -1,28 +1,28 @@
 import Link from "next/link";
 
 import { Container, Row, Col } from "react-bootstrap";
-import css from "./SocialFooter.scss";
+import css from "../Shared/SocialFooter.scss";
 
 class SocialFooter extends React.Component {
   state = {
     socials: [
       {
         icon: "mdi mdi-twitter",
-        link: "#"
+        link: "#",
       },
       {
         icon: "mdi mdi-youtube",
-        link: "#"
+        link: "#",
       },
       {
         icon: "mdi mdi-instagram",
-        link: "#"
+        link: "#",
       },
       {
         icon: "mdi mdi-reddit",
-        link: "#"
-      }
-    ]
+        link: "#",
+      },
+    ],
   };
 
   render() {
@@ -40,7 +40,7 @@ class SocialFooter extends React.Component {
                 <div className="float-right">
                   <ul className="list-inline m-0">
                     {/* Auto generate Social links */}
-                    {this.state.socials.map(social => (
+                    {this.state.socials.map((social) => (
                       <li className="list-inline-item">
                         <Link href={social.link} passHref class="social-icon">
                           <i class={social.icon}></i>

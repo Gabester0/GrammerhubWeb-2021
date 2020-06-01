@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 
 import utils from "../../pages/helpers.scss";
-import css from "./Services.scss";
+import css from "./services.scss";
 
 const Services = () => {
   return (

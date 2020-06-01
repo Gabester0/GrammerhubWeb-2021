@@ -4,7 +4,7 @@ import Router from "next/router";
 import css from "../pages/assets/css/navbar/navbar.scss";
 
 const linkStyle = {
-  marginRight: 15
+  marginRight: 15,
 };
 
 const Header = () => {

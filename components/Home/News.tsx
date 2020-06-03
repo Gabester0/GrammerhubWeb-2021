@@ -17,14 +17,17 @@ class News extends React.Component {
       <Container fluid className={`${css.padding}`}>
           <Row className={`${css.styling}`}>
             <Col sm={12} lg={6}>
+            <div className={`${css.item}`}>
               <div className={`${css.wrapper}mx-auto text-center`}>
                 <img
                   className={`${css.photo}`}
                   src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
                 ></img>
               </div>
+              </div>
             </Col>
             <Col sm={12} lg={6}>
+            <div className={`${css.item}`}>
               <div className={`${css.ginny}`}>
                 <h5 className={`${css.title}`}>News</h5>
                 <p className={`${css.aboutsection}`}>
@@ -37,6 +40,7 @@ class News extends React.Component {
                 <Button className={`${css.story}`} variant="outline-dark">
                   Our Work
                 </Button>
+              </div>
               </div>
             </Col>
           </Row>

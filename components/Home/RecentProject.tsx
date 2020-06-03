@@ -25,6 +25,7 @@ class RecentProject extends React.Component {
             </div>
           </Col>
           <Col sm={12} lg={6}>
+          <div className={`${css.item}`}>
             <div className={`${css.wrapper}mx-auto text-center`}>
               <h5 className={`${css.title}`}>Recent Projects</h5>
               <p className={`${css.aboutsection}`}>
@@ -37,6 +38,7 @@ class RecentProject extends React.Component {
               <Button className={`${css.story}`} variant="outline-dark">
                 See More
               </Button>
+            </div>
             </div>
           </Col>
         </Row>

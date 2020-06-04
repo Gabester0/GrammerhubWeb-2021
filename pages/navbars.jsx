@@ -1,6 +1,6 @@
 import React from "react";
 
-import Layout from "../components/MyLayoutK";
+import Layout from "../components/MyLayout";
 
 const Navbar = props => (
   <Layout>

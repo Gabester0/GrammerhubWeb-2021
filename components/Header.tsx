@@ -4,7 +4,7 @@ import Router from "next/router";
 import css from "../pages/assets/css/navbar/navbar.scss";
 
 const linkStyle = {
-  marginRight: 15
+  marginRight: 15,
 };
 
 const Header = () => {
@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <ul className="navbar-nav ml-auto">
       <li className={css.navItem}>
-        <Link href="/hero">
+        <Link href="/home">
           <a className="nav-link" style={linkStyle}>
             Home
           </a>

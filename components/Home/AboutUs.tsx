@@ -11,8 +11,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCodeBranch } from "@fortawesome/free-solid-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 
-import LeftContent from "../components/Common/Sections/LeftContent";
-import Layout from "../components/MyLayout";
+import LeftContent from "../Common/Sections/LeftContent";
+import Layout from "../MyLayout";
 
 export default () => (
   <Layout>

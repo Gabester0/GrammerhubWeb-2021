@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-import Header from "../components/HeaderK";
+import Header from "../components/Header";
 import css from "../pages/assets/css/navbar/header-nav.scss";
 
 class HeaderNavbar extends React.Component {

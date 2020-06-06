@@ -2,7 +2,7 @@ import React from "react";
 // import Layout from "../components/MyLayout";
 
 import { Row, Container, Col, Jumbotron, Button } from "react-bootstrap";
-import css from "../pages/about.scss";
+import css from "../../pages/about.scss";
 
 // get our fontawesome imports
 // The first import bellow bring the react component,
@@ -15,7 +15,7 @@ import LeftContent from "../Common/Sections/LeftContent";
 import Layout from "../MyLayout";
 
 export default () => (
-  <Layout>
+  // <Layout>
     <React.Fragment>
       <LeftContent />
       <section className={`${css.paddingtop}`}>
@@ -165,5 +165,5 @@ export default () => (
         </Row>
       </Container>
     </React.Fragment>
-  </Layout>
+  // </Layout>
 );

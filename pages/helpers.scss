@@ -3,6 +3,19 @@
 *  throughout the section pages
 */
 
+/**** Overlays ****/
+.overlayBg {
+   background: linear-gradient(to right, #363795, #665391);
+   opacity: 0.95;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   top: 0;
+}
+
 /**** Margins ****/
 .mt20 {
    margin-top: 20px;
@@ -42,7 +55,6 @@
    position: relative;
 }
 
-
 /**** Bootstrap Changes  ****/
 
 .text-muted {
@@ -61,6 +73,7 @@
    color: #212121 !important;
 }
 
+/**** Buttons  ****/
 
 .btn {
    padding: 10px 22px;
@@ -71,6 +84,14 @@
    &:hover {
       transform: translateY(-5px);
    }
+}
+
+.btnWhite {
+   background-color: #fff !important;
+   transition: all 0.3s;
+   border: 2px solid #fff;
+   color: #000 !important;
+   font-size: 14px;
 }
 
 /**** Forms   ****/
@@ -98,6 +119,10 @@
 
 .lightBg {
    background: #fafbfe;
+}
+
+.grayBg {
+   background: #e6e4e4;
 }
 
 

@@ -5,9 +5,9 @@ import css from "./Services.scss";
 
 const Services = () => {
   return (
-    <section className={`${utils.section} ${utils.lightBg}`}>
+    <section className={`${css.sectionSmall} ${utils.grayBg}`}>
       <Container>
-        <Row>
+        {/* <Row>
           <Col>
             <div className={`${css.mainHeading} text-center`}>
               <h2 className={css.title}>You can become a Programmer Hub</h2>
@@ -20,47 +20,41 @@ const Services = () => {
               </div>
             </div>
           </Col>
-        </Row>
-        <Row className={utils.mt50}>
-          <Col lg={4}>
-            <div className={`${css.serviceBox} text-center`}>
+        </Row> */}
+        <Row className={css.rowBaseline}>
+          <Col sm={12} lg={4}>
+            <div className={`${css.serviceBox} ${utils.mt30} text-center`}>
               <div className={css.iconBox}>
                 <img
                   src="../../static/thinking.png"
                   alt="Explore all possble ways"
                 />
-                <h3 class={css.subHeading}>Explore</h3>
-                <div className={css.description}>
-                  Connect with people that share new ideas
-                </div>
+                <h3>Explore</h3>
+                <p>Connect with people that share new ideas</p>
               </div>
             </div>
           </Col>
-          <Col lg={4}>
-            <div className={`${css.serviceBox} text-center`}>
+          <Col sm={12} lg={4}>
+            <div className={`${css.serviceBox} ${utils.mt30} text-center`}>
               <div className={css.iconBox}>
                 <img
                   src="../../static/webinar.png"
                   alt="Explore all possble ways"
                 />
-                <h3 class={css.subHeading}>Engage</h3>
-                <div className={css.description}>
-                  Join weekly meetups to solve coding tasks
-                </div>
+                <h3>Engage</h3>
+                <p>Join weekly meetups to solve coding tasks</p>
               </div>
             </div>
           </Col>
-          <Col lg={4}>
-            <div className={`${css.serviceBox} text-center`}>
+          <Col sm={12} lg={4}>
+            <div className={`${css.serviceBox} ${utils.mt30} text-center`}>
               <div className={css.iconBox}>
                 <img
                   src="../../static/virtual-learn.png"
                   alt="Explore all possble ways"
                 />
-                <h3 class={css.subHeading}>Learn</h3>
-                <div className={css.description}>
-                  Learn different ways to tackle a problem
-                </div>
+                <h3>Learn</h3>
+                <p>Learn different ways to tackle a problem</p>
               </div>
             </div>
           </Col>

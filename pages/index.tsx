@@ -1,5 +1,6 @@
 import Layout from '../components/MyLayout'
 import Link from 'next/link'
+import Head from 'next/head'
 import fetch from 'isomorphic-unfetch'
 
 const ShowLink = ({ show }) => (

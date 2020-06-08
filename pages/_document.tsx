@@ -16,7 +16,7 @@ class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <title>Grammerhub | Home</title>
+          {/* <title>Grammerhub | Home</title> */}
           <link
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
             rel="stylesheet"

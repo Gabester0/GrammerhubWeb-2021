@@ -32,7 +32,7 @@ const Index = (props) => (
     <Head key={5}>
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
       <meta name="description" content="For the team to write tags in here" />
       <meta name="author" content="Grammer Hub" />
       <title>Grammerhub | Level Up Your Coding Skills - Coming Soon</title>

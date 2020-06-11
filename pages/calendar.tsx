@@ -38,13 +38,15 @@ export default () => {
 
   const filter = () => {
     if (searchTerm.length < 3) return;
-    const results = events.filter(event => JSON.stringify(event).toLowerCase().includes(searchTerm));
+    const results = events.filter(event => 
+      JSON.stringify(Object.values(event)).toLowerCase().includes(searchTerm.toLowerCase())
+      );
     setFiltered(results);
   }
 
   // --------- HANDLERS ----------- ///
   const handleChange = event => {
-    if (event.target.value === '' && event.target.value.length < searchTerm.length) setFiltered(events);
+    if (event?.target?.value === '' && event?.target?.value?.length < searchTerm.length) setFiltered(events);
     setSearchTerm(event.target.value);
   }
 

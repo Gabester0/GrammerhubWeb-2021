@@ -1,6 +1,6 @@
 // import Header from "../components/Header";
-import HeaderNavbar from "../pages/headerNavbar";
-import Footer from "../components/Shared/Footer";
+import HeaderNavbar from "../components/Navbar/HeaderNavbar";
+import Footer from "../components/Footer/Footer";
 
 const layoutStyle = {
   margin: 20,

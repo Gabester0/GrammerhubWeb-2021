@@ -1,0 +1,38 @@
+.navItem {
+   position: relative;
+   padding: 15px 0;
+
+   a {
+      font: {
+         weight: 500;
+         size: 16px;
+      }
+
+      text-transform: uppercase;
+      color: #fff;
+
+      padding: {
+         left: 0;
+         right: 0;
+         top: 0;
+         bottom: 0;
+      }
+
+      margin: {
+         left: 15px;
+         right: 15px;
+      }
+
+      &:hover,
+      &:focus,
+      &.active {
+         color: #171c62;
+      }
+   }
+
+   &:hover {
+      a {
+         color: #000;
+      }
+   }
+}

@@ -1,18 +1,18 @@
 import React from "react";
 import Link from "next/link";
 
-import Header from "../components/Header";
-import css from "../pages/assets/css/navbar/header-nav.scss";
+import Header from "../Header";
+import css from "../Navbar/HeaderNavbar.scss";
 
 class HeaderNavbar extends React.Component {
   state = {
     collapsed: true,
-    toggled: false
+    toggled: false,
   };
 
   toggleNavbarHandler = () => {
     this.setState({
-      collapsed: !this.state.collapsed
+      collapsed: !this.state.collapsed,
     });
   };
 

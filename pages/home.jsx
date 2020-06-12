@@ -1,15 +1,17 @@
 import React from "react";
 import Layout from "../components/MyLayout";
-import Services from "../components/Services/Services";
-import LastMeetups from "../components/Meetups/LastMeetups";
 import Hero from "../components/Home/Hero/Hero";
+import Meetups from "../components/Meetups/Meetups";
+import Charts from "../components/Home/Charts/Charts";
+import Games from "../components/Home/Games/Games";
 
 const Home = () => {
   return (
     <Layout>
       <Hero />
-      <Services />
-      <LastMeetups />
+      <Meetups />
+      <Games />
+      <Charts />
     </Layout>
   );
 };

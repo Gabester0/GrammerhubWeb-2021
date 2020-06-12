@@ -46,5 +46,3 @@ const MyCalendar = (props) => {
 };
 
 export default MyCalendar;
-
-//http://jquense.github.io/react-big-calendar/examples/index.html

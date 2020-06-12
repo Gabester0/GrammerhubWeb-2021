@@ -2,7 +2,7 @@ import React from "react";
 // import Layout from "../components/MyLayout";
 
 import { Row, Container, Col, Jumbotron, Button } from "react-bootstrap";
-import css from "../../pages/about.scss";
+import css from "./AboutUs.scss";
 
 // get our fontawesome imports
 // The first import bellow bring the react component,

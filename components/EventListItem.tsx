@@ -32,22 +32,10 @@ export default (props) => {
   }, [isSelected]);
 
   return (
-    <div
-      ref={myRef}
-      className={css.listItem}
-      onClick={(e) => {
-        setIsSelected(!isSelected);
-      }}
-    >
-      <span>
-        {props.index + 1} - {props.event.local_date} || {props.event.name}
-      </span>
+    <div ref={myRef} className={css.listItem} onClick={(e) => setIsSelected(!isSelected)}>
+      <span> {props.index + 1} - {props.event.local_date} || {props.event.name}</span>
       {isSelected ? <hr /> : null}
-      <div
-        dangerouslySetInnerHTML={
-          isSelected ? { __html: props.event.description } : { __html: "" }
-        }
-      ></div>
+      <div dangerouslySetInnerHTML={isSelected ? { __html: props.event.description } : { __html: "" } }></div>
     </div>
   );
 };

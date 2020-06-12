@@ -16,16 +16,8 @@ const MyCalendar = (props) => {
   const events = props.events.map((event) => {
     let eventTime: number[] = event.local_time.split(":");
     let eventDate: number[] = event.local_date.split("-");
-    let newDateStart = new Date(
-      eventDate[0],
-      eventDate[1] - 1,
-      eventDate[2],
-      eventTime[0],
-      eventTime[1]
-    );
-    let newDateEnd = new Date(
-      new Date(newDateStart).setHours(newDateStart.getHours() + 2)
-    );
+    let newDateStart = new Date(eventDate[0], eventDate[1] - 1, eventDate[2], eventTime[0], eventTime[1]);
+    let newDateEnd = new Date( new Date(newDateStart).setHours(newDateStart.getHours() + 2));
     return {
       allDay: false,
       end: newDateEnd,

@@ -34,10 +34,6 @@ const MyCalendar = (props) => {
     setFiltered(events);
   }, []);
 
-  // React.useEffect(() => {
-  //   setFiltered(events);
-  // }, [])
-
   // WHEN searchTerm CHANGES AND ITS GREATERT THAN 3 FILTER EVENTS
   React.useEffect(() => {
     filter();

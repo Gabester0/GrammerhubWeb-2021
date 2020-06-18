@@ -20,7 +20,7 @@ class ContactForm extends React.Component {
             </Col>
             <Col lg="6" md="6">
               <Form.Group>
-                <Form.Label htmlFor="email">Your Email*</Form.Label>
+                <Form.Label htmlFor="email">Email*</Form.Label>
                 <Form.Control
                   type="email"
                   name="email"
@@ -42,7 +42,7 @@ class ContactForm extends React.Component {
             </Col>
             <Col lg="12" md="12">
               <Form.Group>
-                <Form.Label htmlFor="message">Your Message*</Form.Label>
+                <Form.Label htmlFor="message">Message*</Form.Label>
                 <Form.Control
                   as="textarea"
                   cols="30"

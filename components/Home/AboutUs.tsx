@@ -40,14 +40,7 @@ export default () => (
               <div className={`${css.wrapper}mx-auto text-center`}>
                 <h3 className={`${css.title}`}>About Us</h3>
                 <p className={`${css.aboutsection}`}>
-                  We are Grammers. Founded in 2019 we are a club that welcomes
-                  anyone who wants to learn (or level up!) their coding skills
-                  in a fun, collaborative environment. Our members come from
-                  varied backgrounds in tech and many other fields! We work hard
-                  and like to have fun too. We meet every Monday night at 6 PM
-                  to work on some React.JS apps in a collaborate, real world
-                  environment. We are from all levels and would love to have
-                  you!
+                  We are Grammers. Founded in 2019 our goal is give new developers a team environment to sharpen their skills in a collaborative environment while working on real-world team projects. Our mission is for all our members to be confident in any future interview or jobs. 
                 </p>
                 <Button className={`${css.story}`} variant="outline-dark">
                   Our Story

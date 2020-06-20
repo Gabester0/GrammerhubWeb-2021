@@ -32,7 +32,7 @@ class HeaderNavbar extends React.Component {
         <div id="navbar" className={css.HeaderNavbar}>
           <nav className="navbar navbar-expand-md navbar-light">
             <div className="container">
-              <Link className="navbar-brand" to="/">
+              <Link href="/" >
                 <img src="" alt="GrammerHub" />
               </Link>
 

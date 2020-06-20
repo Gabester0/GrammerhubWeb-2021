@@ -5,11 +5,11 @@ import css from "./Games.scss";
 
 const Games = () => {
   return (
-    <div class={`${utils.section} ${css.sectionPad}`}>
+    <div className={`${utils.section} ${css.sectionPad}`}>
       <Container>
         <Row>
           <Col lg={12}>
-            <div class={css.describeGames}>
+            <div className={css.describeGames}>
               <h4>Visualize board games as you code</h4>
               <h2>Learn how to write algorithms from scratch</h2>
               <p>
@@ -21,10 +21,10 @@ const Games = () => {
                 I'll fill random text please and you don't even have to read it.
               </p>
             </div>
-            <div class={css.sampleGame}>
+            <div className={css.sampleGame}>
               <img
                 src="https://place-hold.it/400x300"
-                class="img-fluid"
+                className="img-fluid"
                 alt="Connect 4"
               />
             </div>

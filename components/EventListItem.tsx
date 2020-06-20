@@ -1,6 +1,6 @@
 import React from "react";
 import "../node_modules/react-big-calendar/lib/css/react-big-calendar.css";
-import css from "../pages/assets/css/calendar/calendar.scss";
+import css from "../components/MyCalendar.scss";
 
 export default (props) => {
   const [isSelected, setIsSelected] = React.useState<boolean>(false);

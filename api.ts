@@ -7,4 +7,8 @@ router.get('/hello', function(req:any, res:any) {
 });
 
 
+router.post('/contactus', function(req:any, res:any) {
+  res.send('contact') 
+});
+
 export default router

@@ -26,7 +26,11 @@ class Hero extends React.Component {
                       better developer. We offer hands on peer review while we
                       code games and sites.
                     </p>
-                    <Button bsPrefix={css.heroBtn} className="text-uppercase">
+                    <Button 
+                      bsPrefix={css.heroBtn} 
+                      className="text-uppercase" 
+                      href="http://bit.ly/grammerhub-slack"
+                      target="_blank">
                       {"Join Our Slack"}
                     </Button>
                   </Col>

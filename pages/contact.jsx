@@ -4,8 +4,8 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import Layout from "../components/MyLayout";
 import SectionTitle from "../components/Common/Sections/SectionTitle";
 
-import utils from "../pages/helpers.scss";
-import css from "./contact.scss";
+import utils from "../Helpers.scss";
+import css from "../components/Contact.scss";
 
 class Contact extends Component {
   render() {

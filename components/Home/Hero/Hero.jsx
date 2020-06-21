@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { Container, Row, Col, Button } from "react-bootstrap";
 
-import utils from "../../../pages/helpers.scss";
+import utils from "../../Helpers.scss";
 import css from "./Hero.scss";
 
 class Hero extends React.Component {

@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.ts",
+    "dev": "nodemon server.ts & npm run watch:scss",
     "build": "next build && tsc --project tsconfig.server.json",
+    "watch:scss": "node-sass --watch components --output-style compressed -o static/",
     "postinstall": "npm run build",
     "start": "NODE_ENV=production node .next/production-server/server.js",
     "test": "mocha -r ts-node/register"

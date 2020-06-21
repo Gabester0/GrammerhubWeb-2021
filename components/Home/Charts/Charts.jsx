@@ -1,6 +1,6 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
 
-import utils from "../../../pages/helpers.scss";
+import utils from "../../Helpers.scss";
 import css from "./Charts.scss";
 
 const Charts = () => {

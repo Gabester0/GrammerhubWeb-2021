@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
-import utils from "../../../pages/helpers.scss";
-import css from "../../../pages/about.scss";
+import utils from "../../Helpers.scss";
+import css from "../../About.scss";
 
 const LeftContent = () => {
   return (

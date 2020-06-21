@@ -1,15 +1,14 @@
 import Link from "next/link";
-
 import { Container, Row, Col } from "react-bootstrap";
 import css from "./Footer.scss";
 
 const Footer = () => {
   return (
-    <div class={css.footer}>
+    <div className={css.footer}>
       <Container>
         <Row>
           <Col sm="5">
-            <div class={css.footerLogo}>
+            <div className={css.footerLogo}>
               <img src="https://place-hold.it/50x50" alt="Footer logo" />
               <p>
                 Do remember to followed yourself material mr recurred carriage.
@@ -19,36 +18,36 @@ const Footer = () => {
             </div>
           </Col>
           <Col sm={{ span: 4, offset: 3 }}>
-            <div class={css.footerNav}>
+            <div className={css.footerNav}>
               <ul>
                 <li>
-                  <Link href="#home" passHref>
-                    Home
+                  <Link href="/home" passHref>
+                    <a>Home</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#about" passHref>
-                    About Us
+                  <Link href="/about" passHref>
+                    <a>About Us</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#media" passHref>
-                    Last Meetups
+                  <Link href="/media" passHref>
+                    <a>Last Meetups</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#blog" passHref>
-                    Blog
+                  <Link href="/blog" passHref>
+                    <a>Blog</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#calendar" passHref>
-                    Calendar
+                  <Link href="/calendar" passHref>
+                    <a>Calendar</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#contact" passHref>
-                    Contact
+                  <Link href="/contact" passHref>
+                    <a>Contact</a>
                   </Link>
                 </li>
               </ul>

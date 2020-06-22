@@ -64,7 +64,7 @@
    overflow: hidden;
    position: relative;
    color: #665391 !important;
-   transition: all 0.8s ease 0s;
+   transition: width 0.8s ease 0s;
    z-index: 1;
    border-radius: 40px;
 }
@@ -78,7 +78,7 @@
    bottom: 0;
    background-color: #f1f1f1;
    z-index: -1;
-   transition: all 0.3s ease-in-out;
+   transition: width 0.3s ease-in-out;
    width: 50%;
 }
 
@@ -93,6 +93,11 @@
 }
 
 .heroBtn:hover {
-   background-color: #171c62;
+   background-color: #171c6200;
+   border-color: white;
    color: #fff !important;
+}
+
+.heroBtn:active {
+   transform: translateY(1px);
 }

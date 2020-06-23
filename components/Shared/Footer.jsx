@@ -112,7 +112,7 @@ class Footer extends React.Component {
                 <div className={`${utils.mt20} text-muted`}>
                   <p>
                     You would receive our upcoming newsletter, with helpful info
-                    in how to create your own projects, react cheat sheet, and
+                    in how to create your own projects, React cheat sheet, and
                     trivia questions.
                   </p>
                 </div>

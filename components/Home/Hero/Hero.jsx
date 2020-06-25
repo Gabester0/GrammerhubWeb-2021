@@ -18,13 +18,11 @@ class Hero extends React.Component {
                 <Row>
                   <Col className="text-white text-center" lg={{ size: 8 }}>
                     <h4 className={css.clubTitle}>Grammerhub</h4>
-                    <h1 className={css.clubSlogan}>
-                      Virtual Live Coding Sessions
+                    <h1 classname={css.clubSlogan}>
+                      Live. Collaborative. Coding.
                     </h1>
                     <p className={`${css.ptb30} ${css.clubDesc} mx-auto`}>
-                      Come and join us to learn the skills that would make you a
-                      better developer. We offer hands on peer review while we
-                      code games and sites.
+                      Come join us and be a ProGrammer! We meet once a week in a relaxed, welcoming and fun environment where we work on games, apps and sites. Come learn the skills to be a better developer and make your existing skills stronger. 
                     </p>
                     <Button bsPrefix={css.heroBtn} className="text-uppercase">
                       {"Join Our Slack"}

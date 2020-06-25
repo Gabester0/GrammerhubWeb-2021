@@ -24,7 +24,11 @@ class Hero extends React.Component {
                     <p className={`${css.ptb30} ${css.clubDesc} mx-auto`}>
                       Come join us and be a ProGrammer! We meet once a week in a relaxed, welcoming and fun environment where we work on games, apps and sites. Come learn the skills to be a better developer and make your existing skills stronger. 
                     </p>
-                    <Button bsPrefix={css.heroBtn} className="text-uppercase">
+                    <Button 
+                      bsPrefix={css.heroBtn} 
+                      className="text-uppercase" 
+                      href="http://bit.ly/grammerhub-slack"
+                      target="_blank">
                       {"Join Our Slack"}
                     </Button>
                   </Col>

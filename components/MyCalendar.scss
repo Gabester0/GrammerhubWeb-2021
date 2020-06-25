@@ -1,7 +1,5 @@
-
 .layoutStyle {
     margin-top: 50px;
-
 
     .leftSide {
         
@@ -25,6 +23,14 @@
 
         .listItem:hover {
             background-color: rgb(169, 106, 241);
+        }
+
+        .labelSearch {
+            
+        }
+
+        .searchInput {
+            margin-left: 20px;
         }
     }
 

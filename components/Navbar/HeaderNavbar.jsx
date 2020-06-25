@@ -1,18 +1,18 @@
 import React from "react";
 import Link from "next/link";
 
-import Header from "../components/Header";
-import css from "../pages/assets/css/navbar/header-nav.scss";
+import Header from "../Header";
+import css from "../Navbar/HeaderNavbar.scss";
 
 class HeaderNavbar extends React.Component {
   state = {
     collapsed: true,
-    toggled: false
+    toggled: false,
   };
 
   toggleNavbarHandler = () => {
     this.setState({
-      collapsed: !this.state.collapsed
+      collapsed: !this.state.collapsed,
     });
   };
 
@@ -32,7 +32,7 @@ class HeaderNavbar extends React.Component {
         <div id="navbar" className={css.HeaderNavbar}>
           <nav className="navbar navbar-expand-md navbar-light">
             <div className="container">
-              <Link className="navbar-brand" to="/">
+              <Link href="/" >
                 <img src="" alt="GrammerHub" />
               </Link>
 

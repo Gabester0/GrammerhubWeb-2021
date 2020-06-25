@@ -1,8 +1,8 @@
 import React from "react";
 
-import Layout from "../components/MyLayout";
+import Layout from "../MyLayout";
 
-const Navbar = props => (
+const Navbars = (props) => (
   <Layout>
     <React.Fragment>
       <header className="header-navbar sticky">
@@ -187,4 +187,4 @@ const Navbar = props => (
   </Layout>
 );
 
-export default Navbar;
+export default Navbars;

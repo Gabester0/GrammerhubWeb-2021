@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 
-import utils from "../../pages/helpers.scss";
+import utils from "../Helpers.scss";
 import css from "./Services.scss";
 
 const Services = () => {
@@ -11,7 +11,7 @@ const Services = () => {
           <Col>
             <div className={`${css.mainHeading} text-center`}>
               <h2 className={css.title}>You can become a Programmer Hub</h2>
-              <div class={css.subtitle}>
+              <div className={css.subtitle}>
                 <p>
                   Learn what it takes to become a problem solver, not just
                   someone that knows how to code. Build exciting projects that

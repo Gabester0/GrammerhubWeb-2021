@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Router from "next/router";
 // import css from "./Header.scss";
-import css from "../pages/assets/css/navbar/navbar.scss";
+import css from "../components/Navbar/Navbar.scss";
 
 const linkStyle = {
   marginRight: 15,
@@ -36,9 +36,9 @@ const Header = () => {
         </Link>
       </li>
       <li className={css.navItem}>
-        <Link href="/showcase">
+        <Link href="/media">
           <a className="nav-link" style={linkStyle}>
-            Showcase
+            Last Meetups
           </a>
         </Link>
       </li>

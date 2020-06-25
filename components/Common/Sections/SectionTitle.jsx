@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Row, Col } from "react-bootstrap";
 
-import utils from "../../../pages/helpers.scss";
+import utils from "../../Helpers.scss";
 class SectionTitle extends Component {
   render() {
     return (

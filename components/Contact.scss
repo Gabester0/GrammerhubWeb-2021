@@ -1,0 +1,11 @@
+.btnContact {
+    border: 1px solid #28a745;
+    background: #28a745;
+    color: #fff;
+    transition: all 0.3s;
+    font-size: 14px;
+ 
+    &:hover {
+       transform: translateX(5px);
+    }
+ }

@@ -1,12 +1,38 @@
 import React from 'react'
+import Layout from '../components/MyLayout'
+import Link from 'next/link'
 import Head from 'next/head'
+import fetch from 'isomorphic-unfetch'
+
+const ShowLink = ({ show }) => (
+  <li key={show.id}> 
+    <Link as={`/p/${show.id}`} href={`/post?id=${show.id}`}>
+      <a>{show.name}</a>
+    </Link>
+    <style jsx>{`
+      li {
+        list-style: none;
+        margin: 5px 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+
+      a:hover {
+        opacity: 0.6;
+      }
+    `}</style>
+  </li>
+)
 
 const Index = (props) => (
   <React.Fragment>
     <Head key={5}>
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
       <meta name="description" content="For the team to write tags in here" />
       <meta name="author" content="Grammer Hub" />
       <title>Grammerhub | Level Up Your Coding Skills - Coming Soon</title>
@@ -32,7 +58,7 @@ const Index = (props) => (
           <div id="coming-soon">
               <div className="welcome-msg jumbo-box">
                 <header>
-                    <h1>Ready to Gain Experience?</h1>
+                    <h1>Ready to Gain Experience?...</h1>
                 </header>
                 <div className="container">
                     <div className="row">

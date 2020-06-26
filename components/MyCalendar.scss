@@ -1,0 +1,61 @@
+.layoutStyle {
+    margin-top: 50px;
+
+    .leftSide {
+        
+        .eventHeader {
+            font-size: large;
+            color: red;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .eventList {
+            max-height: 500px;
+            overflow: scroll;
+        }
+        
+        .listItem {
+            background-color: rgb(218, 201, 238);
+            border: 1px solid;
+            border-color: blue;
+            padding: 5px;
+
+            .eventTitle {
+                display: flex;
+                justify-content: space-between;
+
+                .close {
+                    cursor: pointer;
+                    background-color: rgb(218, 201, 238);
+                    align-self: flex-end;
+                    align-content: flex-end;
+                    // float: right;
+                    font-size: larger;
+                    // margin-left: 10px;
+                    // padding: 12px 16px;
+                    // transform: translate(0%, -50%);
+                }
+            }
+        }
+
+        .listItem:hover {
+            background-color: rgb(169, 106, 241);
+
+            .close {
+                background-color: rgb(169, 106, 241);
+            }
+        }
+
+        .labelSearch {
+            
+        }
+
+        .searchInput {
+            margin-left: 20px;
+        }
+    }
+
+    .rightSide {
+
+    }
+}

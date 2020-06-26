@@ -1,6 +1,7 @@
 .chartMeetup {
    width: 100%;
-   background: linear-gradient(to right, #363795, #665391);
+   background: -webkit-linear-gradient(left, #4311a1 50%, #18379e 100%);
+   background: linear-gradient(to left, #4311a1 50%, #18379e 100%);
    padding: 150px 120px;
 
    .describeChart {
@@ -42,6 +43,10 @@
          -webkit-transition: 0.2s;
          -moz-transition: 0.2s;
          transition: 0.2s;
+
+         &:active {
+            transform: translateY(1px);
+         }
       }
    }
 

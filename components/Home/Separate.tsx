@@ -16,7 +16,7 @@ class Separate extends React.Component {
       
       <Container fluid className={`${css.padding}`}>
         <Jumbotron fluid className={`${css.jumbo}`}>
-          <h4 className={`${css.subhead}`}>Grammerhub</h4>
+         
         </Jumbotron>
       </Container>
       </React.Fragment>

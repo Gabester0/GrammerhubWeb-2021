@@ -71,7 +71,8 @@
 }
 
 .jumbo {
-    background: linear-gradient(to right, #363795, #665391);
+    background: -webkit-linear-gradient(left, #4311a1 50%, #18379e 100%);
+    background: linear-gradient(to left, #4311a1 50%, #18379e 100%);
     border-radius: 15%;
 }
 

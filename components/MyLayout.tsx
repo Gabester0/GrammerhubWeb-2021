@@ -1,6 +1,6 @@
 // import Header from "../components/Header";
 import Head from 'next/head'
-import HeaderNavbar from "../components/Navbar/HeaderNavbar";
+import HeaderNavbar from "../components/navbar/HeaderNavbar";
 import Footer from "../components/Footer/Footer";
 
 const layoutStyle = {

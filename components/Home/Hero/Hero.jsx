@@ -18,7 +18,7 @@ class Hero extends React.Component {
                 <Row>
                   <Col className="text-white text-center" lg={{ size: 8 }}>
                     <h4 className={css.clubTitle}>Grammerhub</h4>
-                    <h1 classname={css.clubSlogan}>
+                    <h1 className={css.clubSlogan}>
                       Live. Collaborative. Coding.
                     </h1>
                     <p className={`${css.ptb30} ${css.clubDesc} mx-auto`}>

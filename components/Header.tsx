@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Router from "next/router";
 // import css from "./Header.scss";
-import css from "../components/Navbar/Navbar.scss";
+import css from "../components/navbar/Navbar.scss";
 
 const linkStyle = {
   marginRight: 15,

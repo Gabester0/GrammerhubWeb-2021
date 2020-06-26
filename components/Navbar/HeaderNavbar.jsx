@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import Header from "../Header";
-import css from "../Navbar/HeaderNavbar.scss";
+import css from "../navbar/HeaderNavbar.scss";
 
 class HeaderNavbar extends React.Component {
   state = {

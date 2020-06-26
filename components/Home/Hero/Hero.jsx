@@ -17,20 +17,26 @@ class Hero extends React.Component {
               <Container>
                 <Row>
                   <Col className="text-white text-center" lg={{ size: 8 }}>
-                    <h4 className={css.clubTitle}>Grammerhub</h4>
-                    <h1 classname={css.clubSlogan}>
-                      Live. Collaborative. Coding.
-                    </h1>
+                    <div className={css.heroMain}>
+                      <h4 className={css.clubTitle}>Grammerhub</h4>
+                      <h1 className={css.clubSlogan}>
+                        Live. Collaborative. Coding.
+                      </h1>
+                    </div>
                     <p className={`${css.ptb30} ${css.clubDesc} mx-auto`}>
                       Come join us and be a ProGrammer! We meet once a week in a relaxed, welcoming and fun environment where we work on games, apps and sites. Come learn the skills to be a better developer and make your existing skills stronger. 
                     </p>
-                    <Button 
-                      bsPrefix={css.heroBtn} 
-                      className="text-uppercase" 
-                      href="http://bit.ly/grammerhub-slack"
-                      target="_blank">
-                      {"Join Our Slack"}
-                    </Button>
+
+                    <div className={css.heroContainer}>
+                      <Button 
+                        bsPrefix={css.heroBtn} 
+                        className="text-uppercase" 
+                        href="http://bit.ly/grammerhub-slack"
+                        target="_blank">
+                        {"Join Our Slack"}
+                      </Button>
+                    </div>
+
                   </Col>
                 </Row>
               </Container>

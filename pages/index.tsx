@@ -58,7 +58,7 @@ const Index = (props) => (
           <div id="coming-soon">
               <div className="welcome-msg jumbo-box">
                 <header>
-                    <h1>Ready to Gain Experience?</h1>
+                    <h1>Ready to Gain Experience?...</h1>
                 </header>
                 <div className="container">
                     <div className="row">

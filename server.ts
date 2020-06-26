@@ -22,6 +22,12 @@ app.prepare()
     app.render(req, res, actualPage, queryParams)
   })
 
+  server.get('/', (req, res) => { 
+    const actualPage = '/home'
+    const queryParams = { id: req.params.id }
+    app.render(req, res, actualPage, queryParams)
+  })
+
   server.get('/grammerhub', async (req, res) => {
     try {
       const resp = await axios.get("https://api.meetup.com/grammerhub/events")

@@ -23,11 +23,6 @@ const Header = () => {
           </a>
         </Link>
       </li>
-      {/* <Link  href="/calendar">
-        <a className="nav-link" style={linkStyle}>
-          Calendar
-        </a>
-      </Link> */}
       <li className={css.navItem}>
         <Link href="/about">
           <a className="nav-link" style={linkStyle}>
@@ -35,6 +30,7 @@ const Header = () => {
           </a>
         </Link>
       </li>
+      
       <li className={css.navItem}>
         <Link href="/media">
           <a className="nav-link" style={linkStyle}>
@@ -42,13 +38,13 @@ const Header = () => {
           </a>
         </Link>
       </li>
-      <li className={css.navItem}>
+      {/* <li className={css.navItem}>
         <Link href="/blog">
           <a className="nav-link" style={linkStyle}>
             Blog
           </a>
         </Link>
-      </li>
+      </li> */}
       <li className={css.navItem}>
         <Link href="/calendar">
           <a className="nav-link" style={linkStyle}>

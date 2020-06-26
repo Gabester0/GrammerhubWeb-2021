@@ -43,7 +43,6 @@ class Contact extends Component {
       email: '',
       subject: '',
       message: '',
-      isFormSent: false
     })
   }
   

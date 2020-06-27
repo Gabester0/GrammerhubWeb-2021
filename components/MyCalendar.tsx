@@ -7,9 +7,11 @@ import { Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import EventListItem from "./EventListItem";
 import "../node_modules/react-big-calendar/lib/css/react-big-calendar.css";
+// import "./calender-styles.global.scss"
 import css from '../components/MyCalendar.scss'
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
+import Head from "next/head";
 
 const localizer = momentLocalizer(moment);
 const allViews = Object.keys(Views).map((k) => Views[k]);
@@ -81,6 +83,9 @@ const MyCalendar = (props) => {
   }
   return (
     <Layout>
+      <Head>
+        <link href="../node_modules/react-big-calendar/lib/css/react-big-calendar.css" rel="stylesheet"></link>
+      </Head>
       <Row className={css.layoutStyle}>
         <Col className={css.leftSide}>
           <div className={css.eventHeader}>Events List</div>
@@ -99,7 +104,7 @@ const MyCalendar = (props) => {
           <div className={css.eventList}>
             {filtered.map((event, index) => {
               return (
-                <EventListItem event={event} index={index}></EventListItem>
+                <EventListItem key={index} event={event} index={index}></EventListItem>
               );
             })}
           </div>

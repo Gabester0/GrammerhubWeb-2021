@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import { Container } from "react-bootstrap";
-import css from "./assets/css/hero/home-hero.scss";
+import css from "../static/css/hero/home-hero.scss";
 
 class Hero extends React.Component {
   render() {

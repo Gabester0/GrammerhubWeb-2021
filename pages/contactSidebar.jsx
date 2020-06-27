@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import css from "./assets/css/contact/social-sidebar.scss";
+import css from "../static/css/contact/social-sidebar.scss";
 // import ContactSocial from "./contactSocial";
 
 class ContactSidebar extends React.Component {

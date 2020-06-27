@@ -23,7 +23,8 @@ const Games = () => {
             </div>
             <div className={css.sampleGame}>
               <img
-                src="https://place-hold.it/400x300"
+                style={{maxWidth: '500px'}}
+                src="../static/office-working-app-computer-97077.jpg"
                 className="img-fluid"
                 alt="Connect 4"
               />

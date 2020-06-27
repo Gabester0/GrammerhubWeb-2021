@@ -9,7 +9,7 @@ const Footer = () => {
         <Row>
           <Col sm="5">
             <div className={css.footerLogo}>
-              <img src="https://place-hold.it/50x50" alt="Footer logo" />
+              <img style={{ width: '50px' }} src="../static/grammerhubLogo.png" alt="Footer logo" />
               <p>
                 Do remember to followed yourself material mr recurred carriage.
                 High drew west we no or at john. About or given on witty event.

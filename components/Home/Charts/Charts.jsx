@@ -28,7 +28,8 @@ const Charts = () => {
             </div>
             <div className={css.sampleChart}>
               <img
-                src="https://place-hold.it/400x300"
+                style={{maxWidth: '500px'}}
+                src="../static/person-using-silver-macbook-pro-1181467.jpg"
                 className="img-fluid"
                 alt="Doghnut Chart"
               />

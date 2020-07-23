@@ -13,14 +13,10 @@ const Charts = () => {
               <h4>Build charts on a Dashboard</h4>
               <h2>Learn how to use open source libraries.</h2>
               <p>
-                I don't know what to type here so let me fill some random text.
+                Learn the most up to date tech to build your very own dashboards.
                 <br />
-                Lorem ipsum is hard to consume and I use it as a last resort.
-              </p>
-              <p>
-                I don't know what to type here so let me fill some random text.
-                <br />
-                Lorem ipsum is hard to consume and I use it as a last resort.
+                Our Grammers are learning about databases and authentication to create an ecommerce dashboard
+             
               </p>
               <Button type="submit" bsPrefix={`${css.btnGlow}`}>
                 {"Seek More"}

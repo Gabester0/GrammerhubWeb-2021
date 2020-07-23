@@ -10,11 +10,11 @@ const Footer = () => {
           <Col sm="5">
             <div className={css.footerLogo}>
               <img style={{ width: '50px' }} src="../static/grammerhubLogo.png" alt="Footer logo" />
-              <p>
+              {/* <p>
                 Do remember to followed yourself material mr recurred carriage.
                 High drew west we no or at john. About or given on witty event.
                 Or sociable up material bachelor.
-              </p>
+              </p> */}
             </div>
           </Col>
           <Col sm={{ span: 4, offset: 3 }}>

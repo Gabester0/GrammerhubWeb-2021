@@ -3,6 +3,52 @@ import { Container, Row, Col } from "react-bootstrap";
 import utils from "../Helpers.scss";
 import css from "./Services.scss";
 
+interface IImage {
+  url: string
+  alt: string
+}
+
+export interface IServiceProps {
+  img: IImage
+  title: string
+  text: string
+}
+
+const serviceArr: IServiceProps[] = [
+  {
+    img: { url: "../../static/thinking.png", alt: "Explore all possble ways" },
+    title: "Explore",
+    text: "Connect with people that share new ideas",
+  },
+  {
+    img: { url: "../../static/webinar.png", alt: "Explore all possble ways" },
+    title: "Engage",
+    text: "Join weekly meetups to solve coding tasks",
+  },
+  {
+    img: { url: "../../static/virtual-learn.png", alt: "Explore all possble ways" },
+    title: "Learn",
+    text: "Learn different ways to tackle a problem",
+  },
+]
+
+const Service = (props: IServiceProps) => {
+  return (
+    <Col sm={12} lg={4}>
+      <div className={`${css.serviceBox} ${utils.mt30} text-center`}>
+        <div className={css.iconBox}>
+          <img
+            src={props.img.url}
+            alt={props.img.alt}
+          />
+          <h3>{props.title}</h3>
+          <p>{props.text}</p>
+        </div>
+      </div>
+    </Col>
+  )
+}
+
 const Services = () => {
   return (
     <section className={`${css.sectionSmall} ${utils.grayBg}`}>
@@ -21,7 +67,8 @@ const Services = () => {
             </div>
           </Col>
         </Row> */}
-        <Row className={css.rowBaseline}>
+        {/* ================================================================= */}
+        {/* <Row className={css.rowBaseline}>
           <Col sm={12} lg={4}>
             <div className={`${css.serviceBox} ${utils.mt30} text-center`}>
               <div className={css.iconBox}>
@@ -58,6 +105,11 @@ const Services = () => {
               </div>
             </div>
           </Col>
+        </Row> */}
+        <Row className={css.rowBaseline}>
+          {serviceArr.map((srv: IServiceProps, i: number) => {
+            return <Service key={i} {...srv} />
+          })}
         </Row>
       </Container>
     </section>

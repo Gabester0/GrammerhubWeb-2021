@@ -14,12 +14,7 @@ import Separate from "../components/Home/Separate";
 
 export default () => (
   <Layout>
-  < AboutUs />
+    < AboutUs />
     <Separate />
-
-  
-
-    
-
   </Layout>
 );

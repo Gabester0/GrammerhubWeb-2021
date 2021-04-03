@@ -18,9 +18,8 @@ class Hero extends React.Component {
                 <Row>
                   <Col className="text-white text-center" lg={{ size: 8 }}>
                     <div className={css.heroMain}>
-                      <h4 className={css.clubTitle}>Grammerhub</h4>
                       <h1 className={css.clubSlogan}>
-                        Live. Collaborative. Coding.
+                        Grammerhub
                       </h1>
                     </div>
                     <p className={`${css.ptb30} ${css.clubDesc} mx-auto`}>

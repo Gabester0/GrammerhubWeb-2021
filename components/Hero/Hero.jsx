@@ -18,7 +18,6 @@ export const Hero = ()=> {
   async function fetchData() {
     axios.get("/grammerhub").then(({ data }) => {
       setEvents(data);
-      console.log(data[0])
       const dateArr = new Date(`${data[0].local_date}T${data[0].local_time}`).toString().split("");
       dateArr.splice(dateArr.length - 4);
       //If 3rd from last char is "t" string is Eastern Daylight Time and need to splice 8 chars ("aylight ") else splice 7 chars ("avings ")
@@ -53,12 +52,12 @@ export const Hero = ()=> {
                     a space to collaborate and level up their skills by working on live coding projects.
                   </p>
                   {/*
-                    -Bump of the font sizes for everything on the landing page except for the button
-                    -Decide how to visually link Grammer in h1 and in strong (light purple? italics)
                     -Make sure the individual text blocks in h6 break into columns (3 separate h6 display inline?  Need to address pipes)
                   */}
                   <div className={`${css.heroMain} ${css.pb30}`}>
-                    <h6>Live Coding | Dev Community | Career Advice</h6>
+                    <div className={css.pb15}>
+                      <h6>Live Coding | Dev Community | Career Advice</h6>
+                    </div>
                     <p>Next online event: <a href={events[0]?.link || 'https://www.meetup.com/grammerhub/events/'}>{nextEventDate || ""}</a></p>
                   </div>
                   <div className={css.heroContainer}>

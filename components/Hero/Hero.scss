@@ -34,7 +34,7 @@
 }
 
 .clubTitle {
-  font-size: 46px;
+  font-size: 66px;
   line-height: 64px;
 }
 
@@ -47,9 +47,12 @@
   padding-bottom: 30px;
 }
 
+.pb15 {
+  padding-bottom: 15px;
+}
+
 .clubDesc {
-  // color: rgba(255, 255, 255, 0.7);
-  font-size: 15px;
+  font-size: 17px;
   max-width: 600px;
   position: relative;
   animation: fromLeft 2s;
@@ -118,6 +121,14 @@
   animation: fromRight 2s;
 }
 
+.heroMain h6 {
+  font-size: 19px;
+}
+
+.heroMain p {
+  font-size: 17px;
+}
+
 .heroBtn:active {
   // transform: translateY(1px);
   margin-top: 1px;
@@ -171,5 +182,31 @@ a:focus {
   }
   100% {
     opacity: 1;
+  }
+}
+
+h2 {
+  font-size: 40px;
+}
+
+@media (max-width: 450px) {
+  .clubTitle {
+    font-size: 40px;
+  }
+
+  .clubDesc {
+    font-size: 14px;
+  }
+
+  .heroMain h6 {
+    font-size: 17px;
+  }
+
+  .heroMain p {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 32px;
   }
 }

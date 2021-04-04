@@ -1,0 +1,43 @@
+{
+    "name": "Grammerhub Website",
+    "short_name": "GrammerhubWeb",
+    "theme_color": "#4311a1",
+    "background_color": "#ffffff",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "https://grammerhub.org/",
+    "icons": [
+        {
+            "src": "icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/mstile-150x150.png",
+            "sizes": "150x150",
+            "type": "image/png"
+        }
+    ],
+    "splash_pages": null
+  }

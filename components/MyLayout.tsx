@@ -1,6 +1,5 @@
 // import Header from "../components/Header";
 import Head from 'next/head'
-import Footer from "../components/Footer/Footer";
 
 const layoutStyle = {
   // margin: 20,
@@ -17,7 +16,6 @@ const Layout = (props) => (
     </Head>
     {/* <Header /> */}
       {props.children}
-    <Footer />
   </div>
 );
 

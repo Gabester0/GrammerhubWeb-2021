@@ -21,6 +21,7 @@ class MyDocument extends Document {
           {/* <link href="../static/css/normalize.css" rel="stylesheet"></link>
           <link href="../static/MyCalendar.css" rel="stylesheet"></link>
           <link href="../static/css/style.css" rel="stylesheet"></link> */}
+          <link rel="shortcut icon" href="/static/icons/favicon.ico" />
           <link
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
             rel="stylesheet"

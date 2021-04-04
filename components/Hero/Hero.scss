@@ -72,6 +72,7 @@
   z-index: 1;
   border-radius: 40px;
   animation: fadeIn 2s;
+  text-decoration: none;
 }
 
 .heroBtn:before,
@@ -109,6 +110,7 @@
   background-color: #171c6200;
   border-color: white;
   color: #fff !important;
+  text-decoration: none;
 }
 
 .heroMain {
@@ -119,6 +121,17 @@
 .heroBtn:active {
   // transform: translateY(1px);
   margin-top: 1px;
+  text-decoration: none;
+}
+
+a {
+  color: #fcd173;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: #fce9c0;
 }
 
 @keyframes fromLeft {

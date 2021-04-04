@@ -56,7 +56,6 @@ export const Hero = ()=> {
                     -Bump of the font sizes for everything on the landing page except for the button
                     -Decide how to visually link Grammer in h1 and in strong (light purple? italics)
                     -Make sure the individual text blocks in h6 break into columns (3 separate h6 display inline?  Need to address pipes)
-                    -Change link color
                   */}
                   <div className={`${css.heroMain} ${css.pb30}`}>
                     <h6>Live Coding | Dev Community | Career Advice</h6>

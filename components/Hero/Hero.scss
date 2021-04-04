@@ -121,16 +121,25 @@
   animation: fromRight 2s;
 }
 
-.heroMain h6 {
-  font-size: 19px;
-}
-
 .heroMain p {
   font-size: 17px;
 }
 
+.flexRow {
+  margin-top: 20px;
+  padding-bottom: 0;
+}
+
+.flexText {
+  font-size: 19px;
+}
+
+.pipe {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 .heroBtn:active {
-  // transform: translateY(1px);
   margin-top: 1px;
   text-decoration: none;
 }
@@ -189,7 +198,7 @@ h2 {
   font-size: 40px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .clubTitle {
     font-size: 40px;
   }
@@ -198,8 +207,22 @@ h2 {
     font-size: 14px;
   }
 
-  .heroMain h6 {
+  .flexText {
     font-size: 17px;
+    margin-top: 8px;
+    font-weight: bold;
+  }
+
+  .flexRow {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .pipe {
+    display: none;
   }
 
   .heroMain p {

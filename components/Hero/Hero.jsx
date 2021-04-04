@@ -46,18 +46,23 @@ export const Hero = ()=> {
                     <h1 className={css.clubTitle}>
                       Grammerhub
                     </h1>
+                    <p className={`${css.pb15} ${css.flexRow}`}>
+                      <span className={css.flexText}>
+                        Live Coding<span className={css.pipe}>|</span>
+                      </span>
+                      <span className={css.flexText}>
+                         Dev Community<span className={css.pipe}>|</span>
+                      </span>
+                      <span className={css.flexText}>
+                          Career Advice
+                      </span>
+                    </p>
                   </div>
                   <p className={`${css.ptb30} ${css.clubDesc} mx-auto`}>
                     We are pro<strong>grammers</strong>.  Founded in 2020, our mission is to provide new developers
                     a space to collaborate and level up their skills by working on live coding projects.
                   </p>
-                  {/*
-                    -Make sure the individual text blocks in h6 break into columns (3 separate h6 display inline?  Need to address pipes)
-                  */}
                   <div className={`${css.heroMain} ${css.pb30}`}>
-                    <div className={css.pb15}>
-                      <h6>Live Coding | Dev Community | Career Advice</h6>
-                    </div>
                     <p>Next online event: <a href={events[0]?.link || 'https://www.meetup.com/grammerhub/events/'}>{nextEventDate || ""}</a></p>
                   </div>
                   <div className={css.heroContainer}>

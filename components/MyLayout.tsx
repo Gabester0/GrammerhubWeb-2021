@@ -1,7 +1,5 @@
 // import Header from "../components/Header";
 import Head from 'next/head'
-import HeaderNavbar from "../components/Navbar/HeaderNavbar";
-import Footer from "../components/Footer/Footer";
 
 const layoutStyle = {
   // margin: 20,
@@ -16,10 +14,8 @@ const Layout = (props) => (
         <link rel="stylesheet" type="text/css" href={'/_next/static/css/styles.chunk.css?v=' + Date.now()} />
       )}
     </Head>
-    <HeaderNavbar />
     {/* <Header /> */}
-    {props.children}
-    <Footer />
+      {props.children}
   </div>
 );
 

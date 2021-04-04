@@ -18,9 +18,9 @@ class MyDocument extends Document {
     return (
       <html>
         <Head>
-          {/* <link href="../static/css/normalize.css" rel="stylesheet"></link>
-          <link href="../static/MyCalendar.css" rel="stylesheet"></link>
-          <link href="../static/css/style.css" rel="stylesheet"></link> */}
+          <link href="../static/css/normalize.css" rel="stylesheet"></link>
+          <link href="../static/css/style.css" rel="stylesheet"></link>
+          <link rel="shortcut icon" href="/static/icons/favicon.ico" />
           <link
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
             rel="stylesheet"
@@ -32,12 +32,6 @@ class MyDocument extends Document {
             integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
             crossOrigin="anonymous"
           ></script>
-          {/* <link
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-            crossOrigin="anonymous"
-          ></link> */}
           <link
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet"

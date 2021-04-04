@@ -8,9 +8,9 @@ class SectionTitle extends Component {
       <React.Fragment>
         <Row>
           <Col lg={{ span: 8, offset: 2 }}>
-            <h1 className={`${utils.sectionTitle} text-center`}>
+            <h2 className={`${utils.sectionTitle} text-center`}>
               {this.props.title}
-            </h1>
+            </h2>
             <div className={`${utils.sectionBorder}`}>
               <p className={`${utils.subTitle} text-muted text-center`}>
                 {this.props.description}

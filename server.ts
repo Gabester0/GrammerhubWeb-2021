@@ -41,7 +41,7 @@ app.prepare()
     try {
       console.log(req.body)
       const resp = await axios.post(
-        "https://hooks.slack.com/services/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", 
+        "https://hooks.slack.com/services/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", 
         {text: req.body && req.body.text})
       res.send({ error: false, datum: resp.data })
     } catch (err) {

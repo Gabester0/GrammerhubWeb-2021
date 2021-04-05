@@ -144,13 +144,13 @@
   text-decoration: none;
 }
 
-a {
+#nextEvent {
   color: #fcd173;
   text-decoration: underline;
 }
 
-a:hover,
-a:focus {
+#nextEvent:hover,
+#nextEvent:focus {
   color: #fce9c0;
 }
 

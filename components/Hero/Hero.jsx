@@ -63,7 +63,7 @@ export const Hero = ()=> {
                     a space to collaborate and level up their skills by working on live coding projects.
                   </p>
                   <div className={`${css.heroMain} ${css.pb30}`}>
-                    <p>Next online event: <a href={events[0]?.link || 'https://www.meetup.com/grammerhub/events/'}>{nextEventDate || ""}</a></p>
+                    <p>Next online event: <a id={css.nextEvent} href={events[0]?.link || 'https://www.meetup.com/grammerhub/events/'}>{nextEventDate || ""}</a></p>
                   </div>
                   <div className={css.heroContainer}>
                     <Button 
